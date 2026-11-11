@@ -14,15 +14,25 @@ import {
 } from '@/lib/colorUtils';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
-import { Gauge, Zap, Flame, Eye, ArrowUpRight } from 'lucide-react';
+import { Gauge, Zap, Flame, Eye, ArrowUpRight, Heart, Scale } from 'lucide-react';
 
 interface CarCardProps {
   car: Car;
   onViewDetails: (car: Car, initialColorIndex?: number) => void;
   onBookTestDrive: (car: Car, selectedColor?: CarColor) => void;
+  isFavorite?: boolean;
+  onToggleFavorite?: (carId: string) => void;
+  onCompare?: (carId: string) => void;
 }
 
-export function CarCard({ car, onViewDetails, onBookTestDrive }: CarCardProps) {
+export function CarCard({
+  car,
+  onViewDetails,
+  onBookTestDrive,
+  isFavorite = false,
+  onToggleFavorite,
+  onCompare,
+}: CarCardProps) {
   const [selectedColorIndex, setSelectedColorIndex] = useState(0);
 
   // Reset selected color when the car prop changes
@@ -116,17 +126,55 @@ export function CarCard({ car, onViewDetails, onBookTestDrive }: CarCardProps) {
           {/* Subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#121316] via-transparent to-black/40 pointer-events-none" />
 
-          {/* Top Badges */}
-          <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-10 pointer-events-none">
-            <Badge variant={getBadgeVariant()}>
-              {car.badge || car.series}
-            </Badge>
+          {/* Top Badges and Action Icons */}
+          <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-20">
+            <div className="pointer-events-none">
+              <Badge variant={getBadgeVariant()}>
+                {car.badge || car.series}
+              </Badge>
+            </div>
 
-            {car.featured && (
-              <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white text-black shadow-md">
-                Top Model
-              </span>
-            )}
+            <div className="flex items-center gap-1.5">
+              {car.featured && (
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white text-black shadow-md pointer-events-none">
+                  Top Model
+                </span>
+              )}
+
+              {onCompare && (
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onCompare(car.id);
+                  }}
+                  className="p-1.5 rounded-full bg-black/60 hover:bg-black/90 backdrop-blur-md border border-white/10 text-neutral-300 hover:text-white transition-all active:scale-90 cursor-pointer"
+                  title="Solishtirish"
+                >
+                  <Scale className="w-3.5 h-3.5" />
+                </button>
+              )}
+
+              {onToggleFavorite && (
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onToggleFavorite(car.id);
+                  }}
+                  className="p-1.5 rounded-full bg-black/60 hover:bg-black/90 backdrop-blur-md border border-white/10 transition-all active:scale-90 cursor-pointer"
+                  title={isFavorite ? "Garajdan olib tashlash" : "Garajga saqlash"}
+                >
+                  <Heart
+                    className={`w-3.5 h-3.5 ${
+                      isFavorite
+                        ? 'fill-red-500 text-red-500'
+                        : 'text-neutral-300 hover:text-white'
+                    }`}
+                  />
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Color Preview Swatches & Active Color Name Bar */}

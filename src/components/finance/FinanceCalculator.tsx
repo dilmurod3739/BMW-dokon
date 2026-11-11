@@ -315,3 +315,4 @@ export function FinanceCalculator({ onApplyFinance }: FinanceCalculatorProps) {
     </section>
   );
 }
+

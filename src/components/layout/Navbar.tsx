@@ -6,15 +6,24 @@ import Link from 'next/link';
 import { BmwLogo } from '@/components/ui/BmwLogo';
 import { Button } from '@/components/ui/Button';
 import { CarCategory } from '@/types/car';
-import { Menu, X, Phone, Compass, Zap, Gauge, Sliders } from 'lucide-react';
+import { Menu, X, Phone, Compass, Zap, Gauge, Sliders, Heart, Scale } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
   onOpenTestDrive: (carId?: string) => void;
   onSelectCategory: (category: CarCategory) => void;
+  favoriteCount?: number;
+  onOpenGarage?: () => void;
+  onOpenCompare?: () => void;
 }
 
-export function Navbar({ onOpenTestDrive, onSelectCategory }: NavbarProps) {
+export function Navbar({
+  onOpenTestDrive,
+  onSelectCategory,
+  favoriteCount = 0,
+  onOpenGarage,
+  onOpenCompare,
+}: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -128,7 +137,42 @@ export function Navbar({ onOpenTestDrive, onSelectCategory }: NavbarProps) {
           </nav>
 
           {/* Action Button & Mobile Menu Toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
+            {onOpenCompare && (
+              <button
+                type="button"
+                onClick={onOpenCompare}
+                className="p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                title="Modellarni taqqoslash"
+                aria-label="Modellarni taqqoslash"
+              >
+                <Scale className="w-4 h-4 text-neutral-300" />
+              </button>
+            )}
+
+            {onOpenGarage && (
+              <button
+                type="button"
+                onClick={onOpenGarage}
+                className="relative p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                title="Mening Garajim"
+                aria-label="Mening Garajim"
+              >
+                <Heart
+                  className={`w-4 h-4 ${
+                    favoriteCount > 0
+                      ? 'fill-red-500 text-red-500'
+                      : 'text-neutral-300'
+                  }`}
+                />
+                {favoriteCount > 0 && (
+                  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-red-600 text-white text-[10px] font-bold flex items-center justify-center">
+                    {favoriteCount}
+                  </span>
+                )}
+              </button>
+            )}
+
             <Button
               variant="secondary"
               size="sm"

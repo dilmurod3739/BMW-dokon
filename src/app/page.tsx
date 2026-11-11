@@ -14,8 +14,18 @@ import { ConfiguratorStudio } from '@/components/catalog/ConfiguratorStudio';
 import { FinanceCalculator } from '@/components/finance/FinanceCalculator';
 import { CarDetailModal } from '@/components/catalog/CarDetailModal';
 import { TestDriveModal } from '@/components/forms/TestDriveModal';
+import { CompareModal } from '@/components/compare/CompareModal';
+import { GarageModal } from '@/components/garage/GarageModal';
+import { useFavorites } from '@/hooks/useFavorites';
 
 export default function HomePage() {
+  const {
+    favoriteIds,
+    toggleFavorite,
+    clearFavorites,
+    count: favoriteCount,
+  } = useFavorites();
+
   const [selectedCategory, setSelectedCategory] = useState<CarCategory>('all');
   const [detailCar, setDetailCar] = useState<Car | null>(null);
   const [detailInitialColorIndex, setDetailInitialColorIndex] = useState<number>(0);
@@ -24,6 +34,16 @@ export default function HomePage() {
   const [testDriveColor, setTestDriveColor] = useState<CarColor | undefined>(undefined);
   const [testDriveNote, setTestDriveNote] = useState<string | undefined>(undefined);
   const [isTestDriveOpen, setIsTestDriveOpen] = useState(false);
+  const [isCompareOpen, setIsCompareOpen] = useState(false);
+  const [compareCarIds, setCompareCarIds] = useState<string[]>([]);
+  const [isGarageOpen, setIsGarageOpen] = useState(false);
+
+  const handleOpenCompare = (carIds?: string[]) => {
+    if (carIds && carIds.length > 0) {
+      setCompareCarIds(carIds);
+    }
+    setIsCompareOpen(true);
+  };
 
   const handleOpenTestDrive = (
     carId?: string,
@@ -71,6 +91,9 @@ export default function HomePage() {
       <Navbar
         onOpenTestDrive={handleOpenTestDrive}
         onSelectCategory={setSelectedCategory}
+        favoriteCount={favoriteCount}
+        onOpenGarage={() => setIsGarageOpen(true)}
+        onOpenCompare={() => handleOpenCompare()}
       />
 
       {/* Main Content */}
@@ -87,6 +110,9 @@ export default function HomePage() {
           onSelectCategory={setSelectedCategory}
           onViewDetails={handleViewDetails}
           onBookTestDrive={handleBookFromCard}
+          favoriteIds={favoriteIds}
+          onToggleFavorite={toggleFavorite}
+          onCompare={(carId) => handleOpenCompare([carId])}
         />
 
         {/* 3. BMW Individual Configurator Studio */}
@@ -137,6 +163,29 @@ export default function HomePage() {
         carId={testDriveCarId}
         selectedColor={testDriveColor}
         customNote={testDriveNote}
+      />
+
+      {/* Models Comparison Modal */}
+      <CompareModal
+        isOpen={isCompareOpen}
+        onClose={() => setIsCompareOpen(false)}
+        initialCarIds={compareCarIds}
+        onBookTestDrive={(car) => handleOpenTestDrive(car.id)}
+      />
+
+      {/* My Garage / Favorites Modal */}
+      <GarageModal
+        isOpen={isGarageOpen}
+        onClose={() => setIsGarageOpen(false)}
+        favoriteIds={favoriteIds}
+        onToggleFavorite={toggleFavorite}
+        onClearFavorites={clearFavorites}
+        onViewDetails={handleViewDetails}
+        onBookTestDrive={(car) => handleOpenTestDrive(car.id)}
+        onOpenCompare={(ids) => {
+          setIsGarageOpen(false);
+          handleOpenCompare(ids);
+        }}
       />
     </div>
   );

@@ -51,3 +51,4 @@ describe('BMW Financial Services Utils', () => {
     assert.strictEqual(maxResult.downPaymentAmount, 45000); // clamped to 90%
   });
 });
+

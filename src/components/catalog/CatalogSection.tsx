@@ -15,6 +15,9 @@ interface CatalogSectionProps {
   onSelectCategory: (category: CarCategory) => void;
   onViewDetails: (car: Car, initialColorIndex?: number) => void;
   onBookTestDrive: (car: Car, selectedColor?: CarColor) => void;
+  favoriteIds?: string[];
+  onToggleFavorite?: (carId: string) => void;
+  onCompare?: (carId: string) => void;
 }
 
 export function CatalogSection({
@@ -22,6 +25,9 @@ export function CatalogSection({
   onSelectCategory,
   onViewDetails,
   onBookTestDrive,
+  favoriteIds = [],
+  onToggleFavorite,
+  onCompare,
 }: CatalogSectionProps) {
   const {
     searchQuery,
@@ -75,6 +81,9 @@ export function CatalogSection({
                   car={car}
                   onViewDetails={onViewDetails}
                   onBookTestDrive={onBookTestDrive}
+                  isFavorite={favoriteIds.includes(car.id)}
+                  onToggleFavorite={onToggleFavorite}
+                  onCompare={onCompare}
                 />
               ))}
             </AnimatePresence>
