@@ -89,11 +89,6 @@ export function InteriorSection({
               Interaktiv Kokpit
             </span>
           </h2>
-
-          <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
-            Rasmiy BMW USA konfiguratoridan olingan 4 xil original charm ranglari,
-            panoramali BMW Curved Display va studiya darajasidagi Bowers & Wilkins akustikasi bilan tanishing.
-          </p>
         </div>
 
         {/* 1. MODEL SELECTOR TABS */}
