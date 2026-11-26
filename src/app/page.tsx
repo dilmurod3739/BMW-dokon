@@ -11,6 +11,7 @@ import { BrandStory } from '@/components/home/BrandStory';
 import { DealershipsSection } from '@/components/home/DealershipsSection';
 import { CtaBanner } from '@/components/home/CtaBanner';
 import { CatalogSection } from '@/components/catalog/CatalogSection';
+import { InteriorSection } from '@/components/home/InteriorSection';
 import { ConfiguratorStudio } from '@/components/catalog/ConfiguratorStudio';
 import { FinanceCalculator } from '@/components/finance/FinanceCalculator';
 import { CarDetailModal } from '@/components/catalog/CarDetailModal';
@@ -120,7 +121,22 @@ export default function HomePage() {
           onCompare={(carId) => handleOpenCompare([carId])}
         />
 
-        {/* 3. BMW Individual Configurator Studio */}
+        {/* 3. BMW Salon va Qulayliklari (Interior & Cockpit Showcase) */}
+        <InteriorSection
+          onBookTestDrive={(carId, interiorColor) => {
+            const car = CARS_DATA.find((c) => c.id === carId);
+            handleOpenTestDrive(
+              carId,
+              undefined,
+              interiorColor
+                ? `Tanlangan salon: ${interiorColor.name} (${interiorColor.material})`
+                : undefined
+            );
+          }}
+          onViewDetails={handleViewDetails}
+        />
+
+        {/* 4. BMW Individual Configurator Studio */}
         <ConfiguratorStudio
           onBookTestDrive={(car, color) => handleOpenTestDrive(car.id, color)}
           onViewDetails={handleViewDetails}

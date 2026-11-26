@@ -17,6 +17,7 @@ import {
   ChevronDown,
   MapPin,
   Search,
+  Sparkles,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -121,6 +122,14 @@ export function Navbar({
                     megaMenuOpen ? 'rotate-180 text-[#38bdf8]' : 'text-neutral-400'
                   }`}
                 />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => handleNavClick(undefined, 'interior')}
+                className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              >
+                Salon va Qulaylik
               </button>
 
               <button
@@ -301,6 +310,14 @@ export function Navbar({
                 className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-red-400 hover:bg-red-500/10 transition-colors"
               >
                 <span>BMW M High-Performance</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleNavClick(undefined, 'interior')}
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors"
+              >
+                <Sparkles className="w-4 h-4 text-[#38bdf8]" />
+                <span>BMW Salon va Qulayliklari</span>
               </button>
               <button
                 type="button"
