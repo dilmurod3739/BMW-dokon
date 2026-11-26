@@ -97,9 +97,8 @@ export function CarCard({
                 alt={`${car.name} — ${viewMode === 'interior' ? activeInterior.name : activeColor.name}`}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className={`${
-                  viewMode === 'interior' ? 'object-cover' : 'object-contain object-center'
-                } group-hover:scale-105 transition-transform duration-500 ease-out`}
+                className={`${viewMode === 'interior' ? 'object-cover' : 'object-contain object-center'
+                  } group-hover:scale-105 transition-transform duration-500 ease-out`}
               />
             </motion.div>
           </AnimatePresence>
@@ -139,11 +138,10 @@ export function CarCard({
                     e.stopPropagation();
                     setViewMode(viewMode === 'exterior' ? 'interior' : 'exterior');
                   }}
-                  className={`px-2 py-1 rounded-full text-[10px] font-bold backdrop-blur-md border transition-all active:scale-95 cursor-pointer flex items-center gap-1 ${
-                    viewMode === 'interior'
+                  className={`px-2 py-1 rounded-full text-[10px] font-bold backdrop-blur-md border transition-all active:scale-95 cursor-pointer flex items-center gap-1 ${viewMode === 'interior'
                       ? 'bg-[#1C69D4] border-white text-white shadow-md'
                       : 'bg-black/60 hover:bg-black/90 border-white/15 text-neutral-200 hover:text-white'
-                  }`}
+                    }`}
                   title={viewMode === 'interior' ? "Kuzovni ko‘rish" : "Salonni ko‘rish"}
                 >
                   <span>{viewMode === 'interior' ? '🚗 Kuzov' : '💺 Salon'}</span>
@@ -181,11 +179,10 @@ export function CarCard({
                   title={isFavorite ? "Garajdan olib tashlash" : "Garajga saqlash"}
                 >
                   <Heart
-                    className={`w-3.5 h-3.5 ${
-                      isFavorite
+                    className={`w-3.5 h-3.5 ${isFavorite
                         ? 'fill-red-500 text-red-500'
                         : 'text-neutral-300 hover:text-white'
-                    }`}
+                      }`}
                   />
                 </button>
               )}
@@ -201,66 +198,64 @@ export function CarCard({
             <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-md px-2 py-1.5 rounded-full border border-white/15 shadow-lg max-w-[58%] overflow-x-auto scrollbar-none">
               {viewMode === 'exterior'
                 ? car.colors.map((c, idx) => {
-                    const isSelected = selectedColorIndex === idx;
-                    return (
-                      <button
-                        key={c.name}
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setSelectedColorIndex(idx);
-                        }}
-                        title={c.name}
-                        aria-label={`${car.name} rangi: ${c.name}`}
-                        data-testid={`car-card-color-${car.id}-${idx}`}
-                        className={`relative w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-1 focus-visible:ring-offset-black cursor-pointer active:scale-90 ${
-                          isSelected
-                            ? 'scale-125 ring-2 ring-white shadow-md z-10'
-                            : 'hover:scale-110 opacity-75 hover:opacity-100 ring-1 ring-white/30'
+                  const isSelected = selectedColorIndex === idx;
+                  return (
+                    <button
+                      key={c.name}
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedColorIndex(idx);
+                      }}
+                      title={c.name}
+                      aria-label={`${car.name} rangi: ${c.name}`}
+                      data-testid={`car-card-color-${car.id}-${idx}`}
+                      className={`relative w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-1 focus-visible:ring-offset-black cursor-pointer active:scale-90 ${isSelected
+                          ? 'scale-125 ring-2 ring-white shadow-md z-10'
+                          : 'hover:scale-110 opacity-75 hover:opacity-100 ring-1 ring-white/30'
                         }`}
-                        style={{
-                          backgroundColor: c.hex,
-                          boxShadow: isSelected
-                            ? `0 0 10px ${hexToRgba(c.hex, 0.9)}`
-                            : undefined,
-                        }}
-                      >
-                        {isSelected && (
-                          <span className="absolute inset-0 m-auto w-1 h-1 rounded-full bg-white shadow-xs" />
-                        )}
-                      </button>
-                    );
-                  })
+                      style={{
+                        backgroundColor: c.hex,
+                        boxShadow: isSelected
+                          ? `0 0 10px ${hexToRgba(c.hex, 0.9)}`
+                          : undefined,
+                      }}
+                    >
+                      {isSelected && (
+                        <span className="absolute inset-0 m-auto w-1 h-1 rounded-full bg-white shadow-xs" />
+                      )}
+                    </button>
+                  );
+                })
                 : (car.interiorColors || []).map((ic, idx) => {
-                    const isSelected = selectedInteriorIndex === idx;
-                    return (
-                      <button
-                        key={ic.name}
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setSelectedInteriorIndex(idx);
-                        }}
-                        title={`${ic.name} (${ic.material})`}
-                        aria-label={`${car.name} saloni: ${ic.name}`}
-                        className={`relative w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-1 focus-visible:ring-offset-black cursor-pointer active:scale-90 ${
-                          isSelected
-                            ? 'scale-125 ring-2 ring-white shadow-md z-10'
-                            : 'hover:scale-110 opacity-75 hover:opacity-100 ring-1 ring-white/30'
+                  const isSelected = selectedInteriorIndex === idx;
+                  return (
+                    <button
+                      key={ic.name}
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedInteriorIndex(idx);
+                      }}
+                      title={`${ic.name} (${ic.material})`}
+                      aria-label={`${car.name} saloni: ${ic.name}`}
+                      className={`relative w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-1 focus-visible:ring-offset-black cursor-pointer active:scale-90 ${isSelected
+                          ? 'scale-125 ring-2 ring-white shadow-md z-10'
+                          : 'hover:scale-110 opacity-75 hover:opacity-100 ring-1 ring-white/30'
                         }`}
-                        style={{
-                          backgroundColor: ic.hex,
-                          boxShadow: isSelected
-                            ? `0 0 10px ${hexToRgba(ic.hex, 0.9)}`
-                            : undefined,
-                        }}
-                      >
-                        {isSelected && (
-                          <span className="absolute inset-0 m-auto w-1 h-1 rounded-full bg-white shadow-xs" />
-                        )}
-                      </button>
-                    );
-                  })}
+                      style={{
+                        backgroundColor: ic.hex,
+                        boxShadow: isSelected
+                          ? `0 0 10px ${hexToRgba(ic.hex, 0.9)}`
+                          : undefined,
+                      }}
+                    >
+                      {isSelected && (
+                        <span className="absolute inset-0 m-auto w-1 h-1 rounded-full bg-white shadow-xs" />
+                      )}
+                    </button>
+                  );
+                })}
             </div>
 
             {/* Active Color / Interior Name Pill with Animated Label */}
@@ -318,7 +313,7 @@ export function CarCard({
                 <Zap className="w-3 h-3 text-[#0066B1]" /> {car.category === 'bmw-i' ? 'Masofa' : 'Sarf'}
               </span>
               <span className="text-sm font-bold text-white mt-0.5">
-                {car.specs.range ? car.specs.range.split(' ')[0] + ' ' + (car.category === 'bmw-i' ? 'km' : 'l') : 'A+' }
+                {car.specs.range ? car.specs.range.split(' ')[0] + ' ' + (car.category === 'bmw-i' ? 'km' : 'l') : 'A+'}
               </span>
             </div>
           </div>
@@ -349,8 +344,8 @@ export function CarCard({
             car.category === 'm-power'
               ? 'm-power'
               : car.category === 'bmw-i'
-              ? 'electric'
-              : 'primary'
+                ? 'electric'
+                : 'primary'
           }
           size="sm"
           onClick={() => onBookTestDrive(car, activeColor)}

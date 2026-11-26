@@ -21,7 +21,7 @@ interface HeroSectionProps {
   onOpenTestDrive: () => void;
 }
 
-const HERO_VIDEO_SRC = '/videos/bmw-hero-driving.mp4';
+const HERO_VIDEO_SRC = '/videos/bmw-welcome-light.mp4';
 
 export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionProps) {
   const [isPlaying, setIsPlaying] = useState(true);
