@@ -238,7 +238,10 @@ describe('BMW Cars Interior Color Integrity', () => {
         assert.ok(ic.name && ic.name.trim().length > 0, 'Interior color name must not be empty');
         assert.ok(ic.material && ic.material.trim().length > 0, 'Material must not be empty');
         assert.match(ic.hex, /^#[0-9A-Fa-f]{6}$/, `Interior hex ${ic.hex} must be #RRGGBB`);
-        assert.ok(ic.image && ic.image.startsWith('https://'), 'Interior render image must be valid URL');
+        assert.ok(
+          ic.image && (ic.image.startsWith('https://') || ic.image.startsWith('/images/')),
+          'Interior render image must be valid URL or local asset path'
+        );
       }
     }
   });

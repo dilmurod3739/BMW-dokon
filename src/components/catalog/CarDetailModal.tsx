@@ -366,6 +366,22 @@ export function CarDetailModal({
               Salon Qulayliklari va Innovatsion Texnologiyalari
             </h4>
 
+            {/* Visual Comfort Suite Banner from BMW USA */}
+            <div className="relative w-full h-32 sm:h-44 rounded-xl overflow-hidden border border-white/10 bg-black/40">
+              <Image
+                src="/images/interiors/luxury-comfort-suite.jpg"
+                alt="BMW Luxury Comfort and Tech Suite"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
+                <span className="text-[11px] font-medium text-neutral-300 backdrop-blur-md bg-black/60 px-2.5 py-1 rounded-full border border-white/10">
+                  BMW Live Cockpit Professional & Comfort Suite
+                </span>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {/* Feature 1: Curved Display */}
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5 hover:border-white/25 transition-all">
