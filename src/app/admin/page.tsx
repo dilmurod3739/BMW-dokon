@@ -18,8 +18,11 @@ import { BookingsTab } from '@/components/admin/BookingsTab';
 import { CarsTab } from '@/components/admin/CarsTab';
 import { DealershipsTab } from '@/components/admin/DealershipsTab';
 import { NewBookingModal } from '@/components/admin/NewBookingModal';
+import { AdminAuthGate, AUTH_STORAGE_KEY } from '@/components/admin/AdminAuthGate';
 
 export default function AdminPage() {
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState<boolean>(true);
   const [activeTab, setActiveTab] = useState<AdminTab>('dashboard');
   const [bookings, setBookings] = useState<BookingLead[]>([]);
   const [metrics, setMetrics] = useState(() => getAdminMetrics());
@@ -41,6 +44,25 @@ export default function AdminPage() {
   }, []);
 
   useEffect(() => {
+    try {
+      const stored = sessionStorage.getItem(AUTH_STORAGE_KEY);
+      if (stored === 'true') {
+        setIsAuthenticated(true);
+      }
+    } catch {}
+    setIsCheckingAuth(false);
+  }, []);
+
+  const handleLogout = () => {
+    try {
+      sessionStorage.removeItem(AUTH_STORAGE_KEY);
+    } catch {}
+    setIsAuthenticated(false);
+    showToast('Tizimdan muvaffaqiyatli chiqildi');
+  };
+
+  useEffect(() => {
+    if (!isAuthenticated) return;
     refreshData();
 
     const handleUpdate = () => {
@@ -75,6 +97,18 @@ export default function AdminPage() {
 
   const pendingCount = bookings.filter((b) => b.status === 'pending').length;
 
+  if (isCheckingAuth) {
+    return (
+      <div className="min-h-screen bg-[#070709] flex items-center justify-center">
+        <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-[#1C69D4] animate-spin" />
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return <AdminAuthGate onAuthenticate={() => setIsAuthenticated(true)} />;
+  }
+
   return (
     <div className="min-h-screen bg-[#070709] text-white flex flex-col md:flex-row antialiased selection:bg-[#1C69D4] selection:text-white">
       {/* Toast Notification */}
@@ -94,6 +128,7 @@ export default function AdminPage() {
         }}
         pendingCount={pendingCount}
         totalCarsCount={CARS_DATA.length}
+        onLogout={handleLogout}
       />
 
       {/* Main Content Area */}

@@ -1,6 +1,7 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { CARS_DATA, DEALERSHIPS } from '../src/data/cars';
+import { ADMIN_PASSCODE } from '../src/components/admin/AdminAuthGate';
 import {
   getBookings,
   addBooking,
@@ -103,5 +104,12 @@ describe('Admin Bookings Storage & Metrics Unit Tests', () => {
     assert.equal(metrics.totalCatalogCars, CARS_DATA.length);
     assert.ok(metrics.totalCatalogValueUSD > 500000);
     assert.equal(metrics.totalDealerships, DEALERSHIPS.length);
+  });
+
+  it('verifies admin security passcode BMW2027', () => {
+    assert.equal(ADMIN_PASSCODE, 'BMW2027');
+    assert.equal('BMW2027'.trim() === ADMIN_PASSCODE, true);
+    assert.equal('wrong_code'.trim() === ADMIN_PASSCODE, false);
+    assert.equal('1234'.trim() === ADMIN_PASSCODE, false);
   });
 });

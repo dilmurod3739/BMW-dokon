@@ -12,6 +12,7 @@ import {
   ExternalLink,
   ShieldCheck,
   ChevronRight,
+  LogOut,
 } from 'lucide-react';
 
 interface AdminSidebarProps {
@@ -19,6 +20,7 @@ interface AdminSidebarProps {
   onTabChange: (tab: AdminTab) => void;
   pendingCount: number;
   totalCarsCount: number;
+  onLogout?: () => void;
 }
 
 export function AdminSidebar({
@@ -26,6 +28,7 @@ export function AdminSidebar({
   onTabChange,
   pendingCount,
   totalCarsCount,
+  onLogout,
 }: AdminSidebarProps) {
   const menuItems = [
     {
@@ -127,18 +130,32 @@ export function AdminSidebar({
           <ChevronRight className="w-3.5 h-3.5 text-neutral-500" />
         </Link>
 
-        {/* Admin User Card */}
-        <div className="bg-white/5 border border-white/5 rounded-xl p-3 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-[#1C69D4]/20 border border-[#1C69D4]/40 text-[#38bdf8] flex items-center justify-center font-bold text-xs shrink-0">
-            <ShieldCheck className="w-4 h-4" />
+        {/* Admin User Card & Logout */}
+        <div className="bg-white/5 border border-white/5 rounded-xl p-3 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 overflow-hidden">
+            <div className="w-8 h-8 rounded-full bg-[#1C69D4]/20 border border-[#1C69D4]/40 text-[#38bdf8] flex items-center justify-center font-bold text-xs shrink-0">
+              <ShieldCheck className="w-4 h-4" />
+            </div>
+            <div className="overflow-hidden">
+              <p className="text-xs font-bold text-white truncate">BMW Diler Admin</p>
+              <p className="text-[10px] text-emerald-400 flex items-center gap-1 font-medium">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                Faol (Online)
+              </p>
+            </div>
           </div>
-          <div className="overflow-hidden">
-            <p className="text-xs font-bold text-white truncate">BMW Diler Administratsiyasi</p>
-            <p className="text-[10px] text-emerald-400 flex items-center gap-1 font-medium">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-              Tizim Faol (Online)
-            </p>
-          </div>
+
+          {onLogout && (
+            <button
+              type="button"
+              onClick={onLogout}
+              className="p-1.5 rounded-lg text-neutral-400 hover:text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer shrink-0"
+              title="Tizimdan chiqish (Qulflash)"
+              aria-label="Tizimdan chiqish"
+            >
+              <LogOut className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
     </aside>
