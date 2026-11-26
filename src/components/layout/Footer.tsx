@@ -223,7 +223,12 @@ export function Footer({ onOpenTestDrive, onSelectCategory }: FooterProps) {
           <div className="flex items-center gap-6">
             <span className="hover:text-neutral-400 cursor-pointer">Maxfiylik siyosati</span>
             <span className="hover:text-neutral-400 cursor-pointer">Foydalanish shartlari</span>
-            <span className="hover:text-neutral-400 cursor-pointer">Cookie sozlamalari</span>
+            <Link
+              href="/admin"
+              className="text-neutral-400 hover:text-white transition-colors flex items-center gap-1 font-medium"
+            >
+              <span>Admin Panel</span>
+            </Link>
           </div>
         </div>
       </div>

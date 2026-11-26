@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { bookingFormSchema, BookingFormValues } from '@/lib/validations';
 import { CARS_DATA, DEALERSHIPS } from '@/data/cars';
+import { addBooking } from '@/lib/bookingsStorage';
 import { CarColor } from '@/types/car';
 import { Input } from '@/components/ui/Input';
 import { Select } from '@/components/ui/Select';
@@ -76,8 +77,22 @@ export function BookingForm({
   }));
 
   const onSubmit = async (data: BookingFormValues) => {
-    // Simulate real network API submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // Simulate real network API submission & save to admin storage
+    await new Promise((resolve) => setTimeout(resolve, 600));
+    try {
+      addBooking({
+        fullName: data.fullName,
+        phone: data.phone,
+        email: data.email,
+        carId: data.carId,
+        preferredDate: data.preferredDate,
+        dealershipId: data.dealership,
+        notes: data.notes,
+        type: 'test-drive',
+      });
+    } catch (e) {
+      console.warn('Booking persistence:', e);
+    }
     setSubmittedData(data);
     setIsSubmitted(true);
     if (onSuccess) {
