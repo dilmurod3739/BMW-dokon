@@ -140,9 +140,6 @@ export function ConfiguratorStudio({
               Shaxsiy BMW <br />
               <span className="text-neutral-400">Dizayningizni Yarating</span>
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-neutral-400 max-w-xl">
-              Modelni tanlang, rasmiy BMW bo‘yoqlarini sinab ko‘ring va 4 xil hashamatli salon charm qoplamasi hamda qulayliklarini kashf eting.
-            </p>
           </div>
 
           {/* Quick Model Selector Pills */}

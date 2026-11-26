@@ -5,7 +5,6 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
 import {
   ChevronRight,
   Gauge,
@@ -15,8 +14,6 @@ import {
   Pause,
   Volume2,
   VolumeX,
-  Video,
-  Sparkles,
 } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -24,28 +21,12 @@ interface HeroSectionProps {
   onOpenTestDrive: () => void;
 }
 
-const HERO_VIDEOS = [
-  {
-    id: 'highway',
-    label: 'M Highway Dinamika',
-    src: '/videos/bmw-hero-driving.mp4',
-    badge: 'BMW M Motorsport Drive',
-  },
-  {
-    id: 'dusk',
-    label: 'M3 Shahar Harakati',
-    src: '/videos/bmw-m3-dusk-driving.mp4',
-    badge: 'BMW M3 Dusk Motion',
-  },
-];
+const HERO_VIDEO_SRC = '/videos/bmw-hero-driving.mp4';
 
 export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionProps) {
-  const [activeVideoIdx, setActiveVideoIdx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  const currentVideo = HERO_VIDEOS[activeVideoIdx];
 
   useEffect(() => {
     if (videoRef.current) {
@@ -62,7 +43,7 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
         videoRef.current.pause();
       }
     }
-  }, [isPlaying, activeVideoIdx]);
+  }, [isPlaying]);
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -84,18 +65,13 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
     }
   };
 
-  const switchVideo = (idx: number) => {
-    setActiveVideoIdx(idx);
-    setIsPlaying(true);
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
       {/* Background Video with Subtle Vignette (bright & vivid car view) */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           ref={videoRef}
-          key={currentVideo.src}
+          key={HERO_VIDEO_SRC}
           autoPlay
           muted={isMuted}
           loop
@@ -103,7 +79,7 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
           poster="/images/common/hero.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center scale-105 filter brightness-[0.75] contrast-[1.08] transition-opacity duration-1000"
         >
-          <source src={currentVideo.src} type="video/mp4" />
+          <source src={HERO_VIDEO_SRC} type="video/mp4" />
           {/* Fallback image */}
           <Image
             src="/images/common/hero.jpg"
@@ -197,25 +173,7 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
       </div>
 
       {/* FLOATING VIDEO CONTROLS (Bottom Right) */}
-      <div className="absolute bottom-6 right-6 z-20 hidden md:flex items-center gap-2 backdrop-blur-xl bg-black/60 border border-white/15 p-1.5 rounded-full shadow-2xl">
-        {/* Scene switcher buttons */}
-        <div className="flex items-center gap-1 pr-1 border-r border-white/10">
-          {HERO_VIDEOS.map((v, idx) => (
-            <button
-              key={v.id}
-              type="button"
-              onClick={() => switchVideo(idx)}
-              className={`px-3 py-1 rounded-full text-[11px] font-semibold transition-all cursor-pointer ${
-                activeVideoIdx === idx
-                  ? 'bg-white text-black shadow-md'
-                  : 'text-neutral-300 hover:text-white hover:bg-white/10'
-              }`}
-            >
-              {v.label}
-            </button>
-          ))}
-        </div>
-
+      <div className="absolute bottom-6 right-6 z-20 hidden md:flex items-center gap-1.5 backdrop-blur-xl bg-black/60 border border-white/15 p-1.5 rounded-full shadow-2xl">
         {/* Play/Pause Button */}
         <button
           type="button"

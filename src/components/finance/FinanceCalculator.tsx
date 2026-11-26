@@ -70,9 +70,6 @@ export function FinanceCalculator({ onApplyFinance }: FinanceCalculatorProps) {
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase">
             Kredit va <span className="text-[#38bdf8]">Lizing</span> Kalkulyatori
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-neutral-400">
-            Orzuingizdagi BMW avtomobiliga ega bo‘lish uchun qulay oylik to‘lov va boshlang‘ich to‘lov parametrlarini o‘zingiz rejalashtiring.
-          </p>
         </div>
 
         {/* Main Calculator Grid */}

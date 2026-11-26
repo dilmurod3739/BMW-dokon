@@ -12,7 +12,6 @@ import {
   X,
   Phone,
   Sliders,
-  Heart,
   Scale,
   ChevronDown,
   MapPin,
@@ -201,30 +200,6 @@ export function Navbar({
             >
               <Search className="w-4 h-4 text-neutral-300" />
             </button>
-
-            {/* Garaj (Favorites) */}
-            {onOpenGarage && (
-              <button
-                type="button"
-                onClick={onOpenGarage}
-                className="relative p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
-                title="Mening Garajim"
-                aria-label="Mening Garajim"
-              >
-                <Heart
-                  className={`w-4 h-4 ${
-                    favoriteCount > 0
-                      ? 'fill-red-500 text-red-500'
-                      : 'text-neutral-300'
-                  }`}
-                />
-                {favoriteCount > 0 && (
-                  <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-red-600 text-white text-[10px] font-bold flex items-center justify-center">
-                    {favoriteCount}
-                  </span>
-                )}
-              </button>
-            )}
 
             {/* Test Drive CTA */}
             <Button

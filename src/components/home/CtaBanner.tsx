@@ -40,10 +40,6 @@ export function CtaBanner({
             </span>
           </h2>
 
-          <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-            Orzuingizdagi BMW flagmanini o‘zingiz xohlagan vaqtda va sizga eng yaqin dilerlik markazida individual test-drive qiling. Bizning mutaxassislar barcha texnik savollaringizga to‘liq javob beradi.
-          </p>
-
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
             <Button
               variant="m-power"

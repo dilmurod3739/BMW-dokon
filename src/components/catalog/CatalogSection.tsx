@@ -53,9 +53,6 @@ export function CatalogSection({
             Sizning Idealingizdagi <br />
             <span className="text-neutral-400">BMW Modelini Tanlang</span>
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-neutral-400">
-            Koupe, sedan, krosshover yoki to‘liq elektr: har bir BMW o‘z sinfida yangi standartlarni o‘rnatadi.
-          </p>
         </div>
 
         {/* Filter and Search Bar */}
