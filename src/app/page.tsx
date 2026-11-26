@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Car, CarCategory, CarColor } from '@/types/car';
+import { CARS_DATA } from '@/data/cars';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/components/home/HeroSection';
@@ -91,6 +92,10 @@ export default function HomePage() {
       <Navbar
         onOpenTestDrive={handleOpenTestDrive}
         onSelectCategory={setSelectedCategory}
+        onSelectCar={(carId) => {
+          const car = CARS_DATA.find((c) => c.id === carId);
+          if (car) handleViewDetails(car);
+        }}
         favoriteCount={favoriteCount}
         onOpenGarage={() => setIsGarageOpen(true)}
         onOpenCompare={() => handleOpenCompare()}

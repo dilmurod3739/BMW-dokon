@@ -6,12 +6,24 @@ import Link from 'next/link';
 import { BmwLogo } from '@/components/ui/BmwLogo';
 import { Button } from '@/components/ui/Button';
 import { CarCategory } from '@/types/car';
-import { Menu, X, Phone, Compass, Zap, Gauge, Sliders, Heart, Scale } from 'lucide-react';
+import { MegaMenu } from './MegaMenu';
+import {
+  Menu,
+  X,
+  Phone,
+  Sliders,
+  Heart,
+  Scale,
+  ChevronDown,
+  MapPin,
+  Search,
+} from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
   onOpenTestDrive: (carId?: string) => void;
   onSelectCategory: (category: CarCategory) => void;
+  onSelectCar?: (carId: string) => void;
   favoriteCount?: number;
   onOpenGarage?: () => void;
   onOpenCompare?: () => void;
@@ -20,12 +32,14 @@ interface NavbarProps {
 export function Navbar({
   onOpenTestDrive,
   onSelectCategory,
+  onSelectCar,
   favoriteCount = 0,
   onOpenGarage,
   onOpenCompare,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,6 +56,7 @@ export function Navbar({
 
   const handleNavClick = (category?: CarCategory, targetId: string = 'catalog') => {
     setMobileMenuOpen(false);
+    setMegaMenuOpen(false);
     if (category) {
       onSelectCategory(category);
     }
@@ -51,93 +66,110 @@ export function Navbar({
     }
   };
 
+  const handleSelectCarFromMenu = (carId: string) => {
+    setMegaMenuOpen(false);
+    if (onSelectCar) {
+      onSelectCar(carId);
+    }
+  };
+
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#0A0A0C]/85 backdrop-blur-xl border-b border-white/10 shadow-lg py-3'
-            : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5'
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled || megaMenuOpen
+            ? 'bg-[#0A0A0C]/95 backdrop-blur-xl border-b border-white/10 shadow-lg py-3'
+            : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Logo & Brand title */}
-          <Link
-            href="/"
-            className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1C69D4] rounded-lg"
-          >
-            <div className="transition-transform duration-300 group-hover:scale-105">
-              <BmwLogo className="w-10 h-10 sm:w-11 sm:h-11" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-white font-extrabold tracking-widest text-lg sm:text-xl leading-none uppercase">
-                BMW
-              </span>
-              <span className="text-[10px] tracking-widest text-neutral-400 uppercase font-light">
-                O‘zbekiston
-              </span>
-            </div>
-          </Link>
+          {/* Left: Brand Logo & Title */}
+          <div className="flex items-center gap-6">
+            <Link
+              href="/"
+              className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1C69D4] rounded-lg"
+            >
+              <div className="transition-transform duration-300 group-hover:scale-105">
+                <BmwLogo className="w-10 h-10 sm:w-11 sm:h-11" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-white font-extrabold tracking-widest text-lg sm:text-xl leading-none uppercase">
+                  BMW
+                </span>
+                <span className="text-[10px] tracking-widest text-neutral-400 uppercase font-light">
+                  O‘zbekiston
+                </span>
+              </div>
+            </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8">
-            <button
-              type="button"
-              onClick={() => handleNavClick('all', 'catalog')}
-              className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none focus:text-white"
-            >
-              <Compass className="w-4 h-4 text-neutral-400" />
-              Modellar
-            </button>
-            <button
-              type="button"
-              onClick={() => handleNavClick('bmw-i', 'catalog')}
-              className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none"
-            >
-              <Zap className="w-4 h-4 text-[#0066B1]" />
-              BMW i (Elektr)
-            </button>
-            <button
-              type="button"
-              onClick={() => handleNavClick('m-power', 'catalog')}
-              className="text-sm font-medium text-neutral-300 hover:text-red-400 transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none"
-            >
-              <Gauge className="w-4 h-4 text-[#E2231A]" />
-              M Power
-            </button>
-            <button
-              type="button"
-              onClick={() => handleNavClick(undefined, 'configurator')}
-              className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none"
-            >
-              <Sliders className="w-4 h-4 text-[#1C69D4]" />
-              Konfigurator
-            </button>
-            <button
-              type="button"
-              onClick={() => handleNavClick(undefined, 'finance')}
-              className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none"
-            >
-              Kredit & Lizing
-            </button>
-            <button
-              type="button"
-              onClick={() => handleNavClick(undefined, 'brand-story')}
-              className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer focus:outline-none focus:text-white"
-            >
-              Falsafa
-            </button>
+            {/* Desktop Navigation Links (styled to mirror bmwusa.com) */}
+            <nav className="hidden lg:flex items-center gap-6">
+              {/* Mega-menu trigger for "Modellar" */}
+              <button
+                type="button"
+                onClick={() => setMegaMenuOpen(!megaMenuOpen)}
+                className={`text-sm font-semibold transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none py-1.5 px-2 rounded-lg ${
+                  megaMenuOpen
+                    ? 'text-[#38bdf8] bg-white/5'
+                    : 'text-neutral-200 hover:text-white'
+                }`}
+                aria-expanded={megaMenuOpen}
+              >
+                <span>Modellar</span>
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    megaMenuOpen ? 'rotate-180 text-[#38bdf8]' : 'text-neutral-400'
+                  }`}
+                />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => handleNavClick(undefined, 'configurator')}
+                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              >
+                O‘zingiznikini yarating
+              </button>
+
+              <button
+                type="button"
+                onClick={() => handleNavClick(undefined, 'finance')}
+                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              >
+                Xarid qilish
+              </button>
+
+              <button
+                type="button"
+                onClick={() => handleNavClick('bmw-i', 'catalog')}
+                className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              >
+                Elektr
+              </button>
+
+              <button
+                type="button"
+                onClick={() => handleNavClick(undefined, 'brand-story')}
+                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              >
+                Biz haqimizda
+              </button>
+            </nav>
+          </div>
+
+          {/* Right: Dealer / Search / Tools / Test-Drive */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Dealer Link */}
             <button
               type="button"
               onClick={() => handleNavClick(undefined, 'dealerships')}
-              className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer focus:outline-none focus:text-white"
+              className="hidden xl:flex items-center gap-1.5 text-xs text-neutral-300 hover:text-white transition-colors py-1.5 px-2.5 rounded-lg hover:bg-white/5 cursor-pointer"
             >
-              Dilerlar
+              <MapPin className="w-3.5 h-3.5 text-[#1C69D4]" />
+              <span>Mahalliy BMW markazini tanlang</span>
             </button>
-          </nav>
 
-          {/* Action Button & Mobile Menu Toggle */}
-          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Solishtirish (Compare) */}
             {onOpenCompare && (
               <button
                 type="button"
@@ -150,6 +182,18 @@ export function Navbar({
               </button>
             )}
 
+            {/* Quick Catalog Search trigger */}
+            <button
+              type="button"
+              onClick={() => handleNavClick(undefined, 'catalog')}
+              className="p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+              title="Avtomobillarni qidirish"
+              aria-label="Avtomobillarni qidirish"
+            >
+              <Search className="w-4 h-4 text-neutral-300" />
+            </button>
+
+            {/* Garaj (Favorites) */}
             {onOpenGarage && (
               <button
                 type="button"
@@ -173,6 +217,7 @@ export function Navbar({
               </button>
             )}
 
+            {/* Test Drive CTA */}
             <Button
               variant="secondary"
               size="sm"
@@ -183,17 +228,29 @@ export function Navbar({
               Test-Drive
             </Button>
 
+            {/* Mobile Menu Button */}
             <button
               type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => {
+                setMegaMenuOpen(false);
+                setMobileMenuOpen(!mobileMenuOpen);
+              }}
               aria-label={mobileMenuOpen ? 'Menyuni yopish' : 'Menyuni ochish'}
-              className="md:hidden p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1C69D4]"
+              className="lg:hidden p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1C69D4]"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
       </header>
+
+      {/* Official BMW USA Mega-Menu Dropdown */}
+      <MegaMenu
+        isOpen={megaMenuOpen}
+        onClose={() => setMegaMenuOpen(false)}
+        onSelectCar={handleSelectCarFromMenu}
+        onSelectCategory={onSelectCategory}
+      />
 
       {/* Mobile Drawer Menu */}
       <AnimatePresence>
@@ -203,57 +260,73 @@ export function Navbar({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 top-[60px] z-30 bg-[#0A0A0C]/95 backdrop-blur-2xl border-b border-white/10 p-6 md:hidden shadow-2xl"
+            className="fixed inset-x-0 top-[60px] z-40 bg-[#0A0A0C]/98 backdrop-blur-2xl border-b border-white/10 p-6 lg:hidden shadow-2xl"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setMegaMenuOpen(true);
+                }}
+                className="flex items-center justify-between py-2.5 px-3 rounded-lg text-white bg-white/5 font-semibold text-left"
+              >
+                <span>BMW Barcha Modellari (Katalog)</span>
+                <ChevronDown className="w-4 h-4 text-[#38bdf8]" />
+              </button>
               <button
                 type="button"
                 onClick={() => handleNavClick('all', 'catalog')}
-                className="flex items-center gap-3 text-left py-2.5 px-3 rounded-lg text-neutral-200 hover:text-white hover:bg-white/5 transition-colors"
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
-                <Compass className="w-5 h-5 text-neutral-400" />
-                <span className="font-medium">Barcha Modellar</span>
+                <span>Barcha Modellar</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleNavClick('x-series', 'catalog')}
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
+              >
+                <span>SUVlar (X Seriyasi)</span>
               </button>
               <button
                 type="button"
                 onClick={() => handleNavClick('bmw-i', 'catalog')}
-                className="flex items-center gap-3 text-left py-2.5 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors"
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors"
               >
-                <Zap className="w-5 h-5 text-[#0066B1]" />
-                <span className="font-medium">BMW i (Elektr Avtomobillar)</span>
+                <span>BMW i (To‘liq Elektr)</span>
               </button>
               <button
                 type="button"
                 onClick={() => handleNavClick('m-power', 'catalog')}
-                className="flex items-center gap-3 text-left py-2.5 px-3 rounded-lg text-red-400 hover:bg-red-500/10 transition-colors"
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-red-400 hover:bg-red-500/10 transition-colors"
               >
-                <Gauge className="w-5 h-5 text-[#E2231A]" />
-                <span className="font-medium">BMW M Motorsport</span>
+                <span>BMW M High-Performance</span>
               </button>
               <button
                 type="button"
                 onClick={() => handleNavClick(undefined, 'configurator')}
-                className="flex items-center gap-3 text-left py-2.5 px-3 rounded-lg text-[#38bdf8] hover:bg-white/5 transition-colors"
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
-                <Sliders className="w-5 h-5 text-[#1C69D4]" />
-                <span className="font-medium">Konfigurator Studio</span>
+                <Sliders className="w-4 h-4 text-[#1C69D4]" />
+                <span>O‘zingiznikini yarating (Konfigurator)</span>
               </button>
               <button
                 type="button"
-                onClick={() => handleNavClick(undefined, 'brand-story')}
-                className="flex items-center gap-3 text-left py-2.5 px-3 rounded-lg text-neutral-200 hover:text-white hover:bg-white/5 transition-colors"
+                onClick={() => handleNavClick(undefined, 'finance')}
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
-                <span className="font-medium">BMW Falsafasi</span>
+                <span>Kredit va Lizing Kalkulyatori</span>
               </button>
               <button
                 type="button"
                 onClick={() => handleNavClick(undefined, 'dealerships')}
-                className="flex items-center gap-3 text-left py-2.5 px-3 rounded-lg text-neutral-200 hover:text-white hover:bg-white/5 transition-colors"
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
-                <span className="font-medium">O‘zbekistondagi Dilerlar</span>
+                <MapPin className="w-4 h-4 text-[#1C69D4]" />
+                <span>O‘zbekistondagi Rasmiy Dilerlar</span>
               </button>
 
-              <div className="pt-2 border-t border-white/10">
+              <div className="pt-2 border-t border-white/10 mt-2">
                 <Button
                   variant="primary"
                   size="md"

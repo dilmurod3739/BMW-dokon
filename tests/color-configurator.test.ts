@@ -135,12 +135,12 @@ describe('Color Utilities Unit Tests', () => {
 });
 
 describe('BMW Cars Color Palette Integrity', () => {
-  test('all cars in CARS_DATA have at least 3 distinct color options', () => {
-    assert.equal(CARS_DATA.length, 8, 'There should be 8 cars in CARS_DATA');
+  test('all cars in CARS_DATA have at least 7 distinct color options', () => {
+    assert.ok(CARS_DATA.length >= 8, 'There should be at least 8 cars in CARS_DATA');
     for (const car of CARS_DATA) {
       assert.ok(
-        car.colors && car.colors.length >= 3,
-        `Car ${car.name} (${car.id}) should have at least 3 colors`
+        car.colors && car.colors.length >= 7,
+        `Car ${car.name} (${car.id}) should have at least 7 colors`
       );
       for (const color of car.colors) {
         assert.ok(color.name && color.name.trim().length > 0, 'Color name must not be empty');

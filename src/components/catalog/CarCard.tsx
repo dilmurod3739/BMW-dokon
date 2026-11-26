@@ -155,11 +155,11 @@ export function CarCard({
 
           {/* Color Preview Swatches & Active Color Name Bar */}
           <div
-            className="absolute bottom-3 left-3 right-3 flex items-center justify-between z-20"
+            className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 z-20"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Clickable Swatches */}
-            <div className="flex items-center gap-1.5 bg-black/70 backdrop-blur-md px-2 py-1.5 rounded-full border border-white/15 shadow-lg">
+            <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-md px-2 py-1.5 rounded-full border border-white/15 shadow-lg max-w-[58%] overflow-x-auto scrollbar-none">
               {car.colors.map((c, idx) => {
                 const isSelected = selectedColorIndex === idx;
                 return (
@@ -173,10 +173,10 @@ export function CarCard({
                     title={c.name}
                     aria-label={`${car.name} rangi: ${c.name}`}
                     data-testid={`car-card-color-${car.id}-${idx}`}
-                    className={`relative w-4 h-4 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black cursor-pointer active:scale-90 ${
+                    className={`relative w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-1 focus-visible:ring-offset-black cursor-pointer active:scale-90 ${
                       isSelected
-                        ? 'scale-125 ring-2 ring-white shadow-md'
-                        : 'hover:scale-110 opacity-70 hover:opacity-100 ring-1 ring-white/30'
+                        ? 'scale-125 ring-2 ring-white shadow-md z-10'
+                        : 'hover:scale-110 opacity-75 hover:opacity-100 ring-1 ring-white/30'
                     }`}
                     style={{
                       backgroundColor: c.hex,
@@ -186,7 +186,7 @@ export function CarCard({
                     }}
                   >
                     {isSelected && (
-                      <span className="absolute inset-0 m-auto w-1.5 h-1.5 rounded-full bg-white shadow-xs" />
+                      <span className="absolute inset-0 m-auto w-1 h-1 rounded-full bg-white shadow-xs" />
                     )}
                   </button>
                 );
@@ -195,7 +195,7 @@ export function CarCard({
 
             {/* Active Color Name Pill with Animated Label */}
             <div
-              className="bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/15 text-[10px] text-neutral-200 font-medium truncate max-w-[155px] flex items-center gap-1.5 shadow-lg transition-all duration-300"
+              className="bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/15 text-[10px] text-neutral-200 font-medium truncate max-w-[42%] flex items-center gap-1.5 shadow-lg shrink-0 transition-all duration-300"
               title={activeColor.name}
             >
               <span
