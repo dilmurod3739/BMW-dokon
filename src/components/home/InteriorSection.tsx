@@ -324,7 +324,7 @@ export function InteriorSection({
           {/* Visual Suite Banner */}
           <div className="relative w-full h-36 sm:h-52 rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
             <Image
-              src="/images/interiors/luxury-comfort-suite.jpg"
+              src="/images/common/luxury-comfort-suite.jpg"
               alt="BMW Luxury Comfort Tech Suite"
               fill
               className="object-cover"

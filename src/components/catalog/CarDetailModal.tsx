@@ -57,7 +57,7 @@ export function CarDetailModal({
       name: 'Black Extended Merino Leather',
       material: 'BMW Individual Merino charm',
       hex: '#151619',
-      image: '/images/cars/interior.jpg',
+      image: '/images/common/interior.jpg',
     };
 
   const displayedImage =
@@ -369,7 +369,7 @@ export function CarDetailModal({
             {/* Visual Comfort Suite Banner from BMW USA */}
             <div className="relative w-full h-32 sm:h-44 rounded-xl overflow-hidden border border-white/10 bg-black/40">
               <Image
-                src="/images/interiors/luxury-comfort-suite.jpg"
+                src="/images/common/luxury-comfort-suite.jpg"
                 alt="BMW Luxury Comfort and Tech Suite"
                 fill
                 className="object-cover"

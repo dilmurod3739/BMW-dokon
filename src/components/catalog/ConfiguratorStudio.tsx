@@ -80,7 +80,7 @@ export function ConfiguratorStudio({
       name: 'Black Extended Merino Leather',
       material: 'BMW Individual Merino charm',
       hex: '#151619',
-      image: '/images/cars/interior.jpg',
+      image: '/images/common/interior.jpg',
     };
 
   const currentImage =

@@ -100,13 +100,13 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
           muted={isMuted}
           loop
           playsInline
-          poster="/images/cars/hero.jpg"
+          poster="/images/common/hero.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center scale-105 filter brightness-[0.75] contrast-[1.08] transition-opacity duration-1000"
         >
           <source src={currentVideo.src} type="video/mp4" />
           {/* Fallback image */}
           <Image
-            src="/images/cars/hero.jpg"
+            src="/images/common/hero.jpg"
             alt="BMW Flagship High Performance M8 Gran Coupé"
             fill
             priority

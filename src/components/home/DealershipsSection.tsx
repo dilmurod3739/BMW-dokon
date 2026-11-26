@@ -23,9 +23,6 @@ export function DealershipsSection({
               O‘zbekistondagi <br />
               <span className="text-[#1C69D4]">BMW Dilerlik Markazlari</span>
             </h2>
-            <p className="mt-4 text-sm sm:text-base text-neutral-400">
-              Yuksak xizmat ko‘rsatish madaniyati, individual maslahatlar va sinovdan o‘tkazish uchun eng yangi BMW modellari kutmoqda.
-            </p>
           </div>
 
           <Button

@@ -13,8 +13,8 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFrVBlZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcBoHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXaMv6jQ%25Q8S2YDafHOPjmqn1%25YGDyLOEfu%25qTJIs1SIL3uBrEVtJdSeZG4NuzVMRpsnSkNh56q4VA0ogYPFNF4HvVUH0Kc%252NKd4Wxfj0WucP81D4PnxbUEqcbe89GsLxSHUiprJ8z9Gw6ZuUInptYRSGBb67m5VpW2YCygN6dUmlTv0YPmyX324uAlTQdjcSQ73azDxVWCdnkq8NpFzOALU0MLkIFJG4hgABKupcoCFeWS6xHXKMPVY8AVWhbNmUFQPo90y7CbbHi4TCz99%25wc3lnHiftxdXrxw178zQZPtECUkaRu7slGAnV%25CrXpFON0lZQ6KIqSXRaYWBHOQ5nmPeIFagOybMJynvIT9JWeO2B3iuZZIjedwSUBBDMztMa0eqhk7hX4MLoACo0shJHFlHQ3ou%25KX%25flHSfWQfuj%25V1Pa1UQfNEbn4h110s9OcmZE4riICUtscZwBlrwrxRteXv%25Z857MQ2xRUgChajY5GvlonUhgpn%25WNRsmFt3aJQvCFKdqfkoZJptvM%25cO0%25lp7W3qTMq07Z%25fc1QcXApmxbZkVFxve%25WNRGmSk%25uR4SqVo71g",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFrVBlZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcBoHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXaMv6jQ%25Q8S2YDafHOPjmqn1%25YGDyLOEfu%25qTJIs1SIL3uBrEVtJdSeZG4NuzVMRpsnSkNh56q4VA0ogYPFNF4HvVUH0Kc%252NKd4Wxfj0WucP81D4PnxbUEqcbe89GsLxSHUiprJ8z9Gw6ZuUInptYRSGBb67m5VpW2YCygN6dUmlTv0YPmyX324uAlTQdjcSQ73azDxVWCdnkq8NpFzOALU0MLkIFJG4hgABKupcoCFeWS6xHXKMPVY8AVWhbNmUFQPo90y7CbbHi4TCz99%25wc3lnHiftxdXrxw178zQZPtECUkaRu7slGAnV%25CrXpFON0lZQ6KIqSXRaYWBHOQ5nmPeIFagOybMJynvIT9JWeO2B3iuZZIjedwSUBBDMztMa0eqhk7hX4MLoACo0shJHFlHQ3ou%25KX%25flHSfWQfuj%25V1Pa1UQfNEbn4h110s9OcmZE4riICUtscZwBlrwrxRteXv%25Z857MQ2xRUgChajY5GvlonUhgpn%25WNRsmFt3aJQvCFKdqfkoZJptvM%25cO0%25lp7W3qTMq07Z%25fc1QcXApmxbZkVFxve%25WNRGmSk%25uR4SqVo71g",
-      "/images/cars/m8.jpg",
-      "/images/cars/interior.jpg"
+      "/images/models/bmw-m8/m8.jpg",
+      "/images/common/interior.jpg"
     ],
     "specs": {
       "acceleration": "3.2 s",
@@ -85,25 +85,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -119,8 +119,8 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQF7VllZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcmbHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXTxv6jQ%25ohq2YDafHS6jmqn1%25JHDyLOEfuVqTJIs1SZL3uBrU0VJdSeZGEauzVMRpXlSkNh5uxMVA0ogSZWNF4HvVDt0Kc%252Nqz4Wxfj0zccP81D4knxbUEqctp89GsLxcEUiprJ8l3Gw6ZuUXJptYRSGjM67m5VpD5YCygN67BmlTv0YCayX324mlvTQdjcy923azDxTi5dnkq83FYzOALU0M5kIFJG4h%25ABKupczCFeWS6xnAKMPVYwGSWhbNmtppPo90y7CbbHi4TCz99%25wc3lsciftxdXrWw178zQ9ttECUkaQR7slGAn2uCrXpF2VllZQ6KQwqXRaYWa9LQ5nmPn9UagOybOIPnvIT9IgsO2B3iBvSIjedwqQBBDMztLcoeqhk7WSFMLoACPhVhJHFlb1Oou%25KX9EJHSfWQis4%25V1PawK2fNEbntWN10s9O7NnE4riIC66scZwBlKErxlMkJE%25GdbYCj7ZidzmvhTB1jxbZOMVXuMwx9kYv6Ovu91MhVo7VRi%25PNF1TLdNZnMkJEcGqTMDESqvLB9or",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQF7VllZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcmbHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXTxv6jQ%25ohq2YDafHS6jmqn1%25JHDyLOEfuVqTJIs1SZL3uBrU0VJdSeZGEauzVMRpXlSkNh5uxMVA0ogSZWNF4HvVDt0Kc%252Nqz4Wxfj0zccP81D4knxbUEqctp89GsLxcEUiprJ8l3Gw6ZuUXJptYRSGjM67m5VpD5YCygN67BmlTv0YCayX324mlvTQdjcy923azDxTi5dnkq83FYzOALU0M5kIFJG4h%25ABKupczCFeWS6xnAKMPVYwGSWhbNmtppPo90y7CbbHi4TCz99%25wc3lsciftxdXrWw178zQ9ttECUkaQR7slGAn2uCrXpF2VllZQ6KQwqXRaYWa9LQ5nmPn9UagOybOIPnvIT9IgsO2B3iBvSIjedwqQBBDMztLcoeqhk7WSFMLoACPhVhJHFlb1Oou%25KX9EJHSfWQis4%25V1PawK2fNEbntWN10s9O7NnE4riIC66scZwBlKErxlMkJE%25GdbYCj7ZidzmvhTB1jxbZOMVXuMwx9kYv6Ovu91MhVo7VRi%25PNF1TLdNZnMkJEcGqTMDESqvLB9or",
-      "/images/cars/i7.jpg",
-      "/images/cars/interior.jpg"
+      "/images/models/bmw-i7/i7.jpg",
+      "/images/common/interior.jpg"
     ],
     "specs": {
       "acceleration": "4.7 s",
@@ -181,25 +181,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -215,8 +215,8 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVd4Ws8wSRCzgqHyAL5lQa7sYeySzoVBzcAiN3lZyaBNODXYunWqebQ53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCYLxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqcfbYGWHRBDFBfpCb9EiyElNZkscCRbz1vbwx65efVubbWCmnvzIc1QrO2kn9MOXId4pvnWhcnzIWGjuekx97",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVd4Ws8wSRCzgqHyAL5lQa7sYeySzoVBzcAiN3lZyaBNODXYunWqebQ53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCYLxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqcfbYGWHRBDFBfpCb9EiyElNZkscCRbz1vbwx65efVubbWCmnvzIc1QrO2kn9MOXId4pvnWhcnzIWGjuekx97",
-      "/images/cars/m4.jpg",
-      "/images/cars/interior.jpg"
+      "/images/models/bmw-m4/m4.jpg",
+      "/images/common/interior.jpg"
     ],
     "specs": {
       "acceleration": "3.5 s",
@@ -287,25 +287,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -321,7 +321,7 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFjMflZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWc3SHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvGDyLOEfNmqTJIs1yvL3uBrEV1JdSeZG4YuzVMRpc0SkNh56rOVA0ogYLwNF4Hvmbw0Kc%252y714Wxfj0pUcP81D4VkxbUEqcNO89GsLxdNUiprJ8k%25Gw6ZujNmptYRSDX%2567m5VqQOYCygNzu5mlTv0kSSyX324AFTTQdjcFU33azDxKsjdnkq8WeqzOALUPMykIFJGbPhABKupK31FeWS6WwaKMPVYPt9WhbNmb3rPo90y9slbHi4Tiwy9%25wc3wHBiftxdt%255w178zsjltECUkYRp7slGAmC5CrXpFyn9lZQ6KTOrXRaYW3I2Q5nmPd6%25agOybzYgnvIT9kgbO2B3iApnIjedwsNkBDF7UrOQJxyVAfke3x8NHC4wnfDye975KZ7dDTUVHS9HZTn7C5lk5exgNgpn4sxgeb7UrOjJE471OREHswTlB",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFjMflZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWc3SHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvGDyLOEfNmqTJIs1yvL3uBrEV1JdSeZG4YuzVMRpc0SkNh56rOVA0ogYLwNF4Hvmbw0Kc%252y714Wxfj0pUcP81D4VkxbUEqcNO89GsLxdNUiprJ8k%25Gw6ZujNmptYRSDX%2567m5VqQOYCygNzu5mlTv0kSSyX324AFTTQdjcFU33azDxKsjdnkq8WeqzOALUPMykIFJGbPhABKupK31FeWS6WwaKMPVYPt9WhbNmb3rPo90y9slbHi4Tiwy9%25wc3wHBiftxdt%255w178zsjltECUkYRp7slGAmC5CrXpFyn9lZQ6KTOrXRaYW3I2Q5nmPd6%25agOybzYgnvIT9kgbO2B3iApnIjedwsNkBDF7UrOQJxyVAfke3x8NHC4wnfDye975KZ7dDTUVHS9HZTn7C5lk5exgNgpn4sxgeb7UrOjJE471OREHswTlB",
-      "/images/cars/hero.jpg"
+      "/images/common/hero.jpg"
     ],
     "specs": {
       "acceleration": "5.2 s",
@@ -382,25 +382,25 @@ export const CARS_DATA: Car[] = [
         "name": "Silverstone II Contemporary Interior Design",
         "material": "Contemporary charm",
         "hex": "#D8DADF",
-        "image": "/images/interiors/bmw-x5-suv-silverstone.webp"
+        "image": "/images/models/bmw-x5/interior-silverstone.webp"
       },
       {
         "name": "Copper Brown Contemporary Interior Design",
         "material": "Contemporary charm",
         "hex": "#7A4832",
-        "image": "/images/interiors/bmw-x5-suv-copper.webp"
+        "image": "/images/models/bmw-x5/interior-copper.webp"
       },
       {
         "name": "Black Contemporary Interior Design",
         "material": "Contemporary charm",
         "hex": "#1D1E22",
-        "image": "/images/interiors/bmw-x5-suv-black.webp"
+        "image": "/images/models/bmw-x5/interior-black.webp"
       },
       {
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       }
     ]
   },
@@ -416,7 +416,7 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQF7VllZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcf6HS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvjDyLOEOkUqTJIs1fSL3uBrE5JJdSeZs3EuzVMRr0sSkNh56xyVA0ogY8cNF4HvmRB0Kc%252yu84WxfjTSCcP81D3wCxbUEqdr289GsLxmEUiprJ8DsGw6ZuUqiptYRSGxP67m5Vp8IYCygN6komlTv0YxeyX324m8nTQdjcyIk3azDxTePdnkq83VEzOALUdNckIFJGzHkABKupkbXFeWS6ABuKMPVYFXqWhbNmKQWPo90yG10bHi4TpEX9%25wc36sJiftxdYrIw178zm9utECUkan77slGAnWCCrXpFOMslZQ6KIv6XRaYWB2tQ5nmPej4agOybMxrnvIT9hMdO2B3ioVcIjedwHsNBDMztMa0eqhk7h1gMLoACoE%25hJHFlHsoou%25KX%25n8HSfWQfxR%25V1Pa1OkfNEbnEsa10s9OsNLE4riIr6OscZwB8T5rxRteXpCZ857MQRrRUgChaj15GvlonDUgp2XHOqyv6jQ%25Il02YDafBAOjmqn1esnDyLOEMm1qTJIshKKL3uBroXvJdSeZHQNuzVMR%25aJSk%25gl6JDK7IbH8oVe7C9cvwRL8kIVrgyfYgMkBlbcPrcYBLgvy2oyWXdETQLwp7TVsgl6JzKGwgUJmGcpRB2S",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQF7VllZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcf6HS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvjDyLOEOkUqTJIs1fSL3uBrE5JJdSeZs3EuzVMRr0sSkNh56xyVA0ogY8cNF4HvmRB0Kc%252yu84WxfjTSCcP81D3wCxbUEqdr289GsLxmEUiprJ8DsGw6ZuUqiptYRSGxP67m5Vp8IYCygN6komlTv0YxeyX324m8nTQdjcyIk3azDxTePdnkq83VEzOALUdNckIFJGzHkABKupkbXFeWS6ABuKMPVYFXqWhbNmKQWPo90yG10bHi4TpEX9%25wc36sJiftxdYrIw178zm9utECUkan77slGAnWCCrXpFOMslZQ6KIv6XRaYWB2tQ5nmPej4agOybMxrnvIT9hMdO2B3ioVcIjedwHsNBDMztMa0eqhk7h1gMLoACoE%25hJHFlHsoou%25KX%25n8HSfWQfxR%25V1Pa1OkfNEbnEsa10s9OsNLE4riIr6OscZwB8T5rxRteXpCZ857MQRrRUgChaj15GvlonDUgp2XHOqyv6jQ%25Il02YDafBAOjmqn1esnDyLOEMm1qTJIshKKL3uBroXvJdSeZHQNuzVMR%25aJSk%25gl6JDK7IbH8oVe7C9cvwRL8kIVrgyfYgMkBlbcPrcYBLgvy2oyWXdETQLwp7TVsgl6JzKGwgUJmGcpRB2S",
-      "/images/cars/interior.jpg"
+      "/images/common/interior.jpg"
     ],
     "specs": {
       "acceleration": "4.7 s",
@@ -482,25 +482,25 @@ export const CARS_DATA: Car[] = [
         "name": "Silverstone Sensafin",
         "material": "Sensafin charm",
         "hex": "#D8DADF",
-        "image": "/images/interiors/bmw-x7-m60i-silverstone.webp"
+        "image": "/images/models/bmw-x7/interior-silverstone.webp"
       },
       {
         "name": "Coffee Sensafin",
         "material": "Sensafin charm",
         "hex": "#4A3528",
-        "image": "/images/interiors/bmw-x7-m60i-coffee.webp"
+        "image": "/images/models/bmw-x7/interior-coffee.webp"
       },
       {
         "name": "Cognac Sensafin",
         "material": "Sensafin charm",
         "hex": "#935529",
-        "image": "/images/interiors/bmw-x7-m60i-cognac.webp"
+        "image": "/images/models/bmw-x7/interior-cognac.webp"
       },
       {
         "name": "Black Sensafin",
         "material": "Sensafin charm",
         "hex": "#1C1D21",
-        "image": "/images/interiors/bmw-x7-m60i-black.webp"
+        "image": "/images/models/bmw-x7/interior-black.webp"
       }
     ]
   },
@@ -516,7 +516,7 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFjPGlZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWc3ZHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvjDyLOEOKeqTJIs1fSL3uBrEV1JdSeZsN7uzVMRpcmSkNh56x4VA0ogYZINF4HvmJx0Kc%252yu74Wxfj0p%25cP81D4vfxbUEqcNA89GsLx0QUiprJ8V%25Gw6ZuUk4ptYRSGAw67m5Vpe9YCygN6a3mlTv0YOFyX324mByTQdjcyXX3azDxTi5dnkq83wdzOALU06KkIFJG4hJABKupcowFeWS6xH2KMPVY8%25XWhbNmUFYPo90y7CbbHi4TCz99%25wc3lnHiftxdXrxw178zQZPtECUkaRu7slGAnV%25CrXpFON0lZQ6KIOmXRaYWBLVQ5nmPe%25JagOybLKsnvIT9JWOO2B3iuZZIjedwSUBBDMztMa0eqhk7h1gMLoACoE%25hJHFlHsoou%25KX%25n8HSfWQfxR%25V1Pa1OkfNEbnEsa10s9OsNLE4riIr6OscZwB8T5rxRteXpCZ857MQ2fRUgChaj85GvlonDmgp2XHOCNv6jQ%25Ikn2YDafB6%25jmqn1eAADyLOEMCjqTMrw8jgz9QFe0BLn9iKVZPE20TQLfrphUrOTawFVAfVUa2rZpRBpktmH672Px96L%25rw8jyzcPr4jGcVxEaRq",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFjPGlZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWc3ZHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvjDyLOEOKeqTJIs1fSL3uBrEV1JdSeZsN7uzVMRpcmSkNh56x4VA0ogYZINF4HvmJx0Kc%252yu74Wxfj0p%25cP81D4vfxbUEqcNA89GsLx0QUiprJ8V%25Gw6ZuUk4ptYRSGAw67m5Vpe9YCygN6a3mlTv0YOFyX324mByTQdjcyXX3azDxTi5dnkq83wdzOALU06KkIFJG4hJABKupcowFeWS6xH2KMPVY8%25XWhbNmUFYPo90y7CbbHi4TCz99%25wc3lnHiftxdXrxw178zQZPtECUkaRu7slGAnV%25CrXpFON0lZQ6KIOmXRaYWBLVQ5nmPe%25JagOybLKsnvIT9JWOO2B3iuZZIjedwSUBBDMztMa0eqhk7h1gMLoACoE%25hJHFlHsoou%25KX%25n8HSfWQfxR%25V1Pa1OkfNEbnEsa10s9OsNLE4riIr6OscZwB8T5rxRteXpCZ857MQ2fRUgChaj85GvlonDmgp2XHOCNv6jQ%25Ikn2YDafB6%25jmqn1eAADyLOEMCjqTMrw8jgz9QFe0BLn9iKVZPE20TQLfrphUrOTawFVAfVUa2rZpRBpktmH672Px96L%25rw8jyzcPr4jGcVxEaRq",
-      "/images/cars/m8.jpg"
+      "/images/models/bmw-m8/m8.jpg"
     ],
     "specs": {
       "acceleration": "3.4 s",
@@ -587,25 +587,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -621,7 +621,7 @@ export const CARS_DATA: Car[] = [
     "heroImage": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFj%25slZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcuPHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvGDyLOEfNmqTJIs1yvL3uBrEV1JdSeZsN4uzVMRragSkNh56x4VA0ogYZWNF4HvmRB0Kc%252yKH4WxfjTNBcP81D3UAxbUEqcaF89GsLxCqUiprJ8k%25Gw6ZuUAGptYRSDX%2567m5VqQOYCygNLgumlTv0J69yX324uYbTQdjcFN23azDxK00dnkq8WPzzOALUP6kkIFJGbtOABKup9ouFeWS6iHdKMPVYwi%25WhbNmbkrPo90y9CwbHi4TizR9%25wc3wZQiftxdt73w178z7fMtECUkC1v7slGAZ9CCrXpFRLalZQ6K5riXRaYWgZOQ5nmPvRNagOybzD3nvIT9kQqO2B3iAILIjedwFkpBDMztKHQeqhk7W%25DMLoACPfVhJHFlbk5ou%25KX9AuHSfWQiF2%25V1PawK3fNEbntp310s9O7NnE4riIC0AscZwBlLwrxRteXWyZ857MQPrRUQoFSr16kiyXql5tkATjHdMsqUi5Bo0aVo7UwFyjmBjVwsoH0%25l05kxO4Wsduk45IoFSr86JdoLrNJjuMw%25R",
     "gallery": [
       "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCzgqHyAL5lQa7sYXOSa2CpLQFj%25slZyh3NA%250MA8Kt4zQ53yxpYmrfZ7dWcuPHS94mvhz06kxbZzId4uzwbBL10t8kdqBz2aKwqHMLWqr%25f1hFUnzj15K908l5w1p75zfAtUDJACyXq2FgXAXHXbMv6jQ%25Q9Z2YDafai2jmqn1nvGDyLOEfNmqTJIs1yvL3uBrEV1JdSeZsN4uzVMRragSkNh56x4VA0ogYZWNF4HvmRB0Kc%252yKH4WxfjTNBcP81D3UAxbUEqcaF89GsLxCqUiprJ8k%25Gw6ZuUAGptYRSDX%2567m5VqQOYCygNLgumlTv0J69yX324uYbTQdjcFN23azDxK00dnkq8WPzzOALUP6kkIFJGbtOABKup9ouFeWS6iHdKMPVYwi%25WhbNmbkrPo90y9CwbHi4TizR9%25wc3wZQiftxdt73w178z7fMtECUkC1v7slGAZ9CCrXpFRLalZQ6K5riXRaYWgZOQ5nmPvRNagOybzD3nvIT9kQqO2B3iAILIjedwFkpBDMztKHQeqhk7W%25DMLoACPfVhJHFlbk5ou%25KX9AuHSfWQiF2%25V1PawK3fNEbntp310s9O7NnE4riIC0AscZwBlLwrxRteXWyZ857MQPrRUQoFSr16kiyXql5tkATjHdMsqUi5Bo0aVo7UwFyjmBjVwsoH0%25l05kxO4Wsduk45IoFSr86JdoLrNJjuMw%25R",
-      "/images/cars/m4.jpg"
+      "/images/models/bmw-m4/m4.jpg"
     ],
     "specs": {
       "acceleration": "3.4 s",
@@ -692,25 +692,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -786,25 +786,25 @@ export const CARS_DATA: Car[] = [
         "name": "Smoke White Perforated and Quilted Veganza",
         "material": "Quilted Veganza charm",
         "hex": "#E2E3E7",
-        "image": "/images/interiors/bmw-i5-sedan-smoke.webp"
+        "image": "/images/models/bmw-5-series/interior-smoke.webp"
       },
       {
         "name": "Burgundy Red Perforated and Quilted Veganza",
         "material": "Quilted Veganza charm",
         "hex": "#671C25",
-        "image": "/images/interiors/bmw-i5-sedan-burgundy.webp"
+        "image": "/images/models/bmw-5-series/interior-burgundy.webp"
       },
       {
         "name": "Espresso Brown Perforated and Quilted Veganza",
         "material": "Quilted Veganza charm",
         "hex": "#3E2B22",
-        "image": "/images/interiors/bmw-i5-sedan-espresso.webp"
+        "image": "/images/models/bmw-5-series/interior-espresso.webp"
       },
       {
         "name": "Black Perforated and Quilted Veganza",
         "material": "Quilted Veganza charm",
         "hex": "#1A1B1E",
-        "image": "/images/interiors/bmw-i5-sedan-black.webp"
+        "image": "/images/models/bmw-5-series/interior-black.webp"
       }
     ]
   },
@@ -880,25 +880,25 @@ export const CARS_DATA: Car[] = [
         "name": "Smoke White Perforated Veganza",
         "material": "Perforated Veganza",
         "hex": "#E2E3E7",
-        "image": "/images/interiors/bmw-x1-suv-smoke.webp"
+        "image": "/images/models/bmw-x1/interior-smoke.webp"
       },
       {
         "name": "Castanea Perforated Veganza",
         "material": "Perforated Veganza",
         "hex": "#633B2E",
-        "image": "/images/interiors/bmw-x1-suv-castanea.webp"
+        "image": "/images/models/bmw-x1/interior-castanea.webp"
       },
       {
         "name": "Atlas Grey/Smoke White Bicolor Perforated Veganza",
         "material": "Bicolor Veganza charm",
         "hex": "#B0B4BC",
-        "image": "/images/interiors/bmw-x1-suv-atlas.webp"
+        "image": "/images/models/bmw-x1/interior-atlas.webp"
       },
       {
         "name": "Black Perforated Veganza",
         "material": "Perforated Veganza",
         "hex": "#1A1B1E",
-        "image": "/images/interiors/bmw-x1-suv-black.webp"
+        "image": "/images/models/bmw-x1/interior-black.webp"
       }
     ]
   },
@@ -974,25 +974,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -1068,25 +1068,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -1162,25 +1162,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -1261,25 +1261,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -1355,25 +1355,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -1459,25 +1459,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   },
@@ -1558,25 +1558,25 @@ export const CARS_DATA: Car[] = [
         "name": "Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#151619",
-        "image": "/images/interiors/bmw-m8-gran-coupe-black.webp"
+        "image": "/images/models/bmw-m8/interior-black.webp"
       },
       {
         "name": "Tartufo Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#874D28",
-        "image": "/images/interiors/bmw-m8-gran-coupe-tartufo.webp"
+        "image": "/images/models/bmw-m8/interior-tartufo.webp"
       },
       {
         "name": "Silverstone/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#D2D4D9",
-        "image": "/images/interiors/bmw-m8-gran-coupe-silverstone-black.webp"
+        "image": "/images/models/bmw-m8/interior-silverstone.webp"
       },
       {
         "name": "Fiona Red/Black Extended Merino Leather",
         "material": "BMW Individual Merino charm",
         "hex": "#991B24",
-        "image": "/images/interiors/bmw-m8-gran-coupe-fiona.webp"
+        "image": "/images/models/bmw-m8/interior-fiona.webp"
       }
     ]
   }

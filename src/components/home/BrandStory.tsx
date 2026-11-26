@@ -62,7 +62,7 @@ export function BrandStory() {
             className="relative h-[360px] sm:h-[460px] rounded-3xl overflow-hidden border border-white/10 group"
           >
             <Image
-              src="/images/cars/interior.jpg"
+              src="/images/common/interior.jpg"
               alt="BMW Curved Display Luxury Interior"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
