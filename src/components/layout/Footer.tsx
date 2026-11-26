@@ -221,8 +221,6 @@ export function Footer({ onOpenTestDrive, onSelectCategory }: FooterProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <p>© {new Date().getFullYear()} BMW O‘zbekiston. Barcha huquqlar himoyalangan.</p>
           <div className="flex items-center gap-6">
-            <span className="hover:text-neutral-400 cursor-pointer">Maxfiylik siyosati</span>
-            <span className="hover:text-neutral-400 cursor-pointer">Foydalanish shartlari</span>
             <Link
               href="/admin"
               className="text-neutral-400 hover:text-white transition-colors flex items-center gap-1 font-medium"
