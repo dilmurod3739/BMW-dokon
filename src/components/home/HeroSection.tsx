@@ -91,7 +91,7 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
-      {/* Background Video with Dark Vignette and Gradient Layers */}
+      {/* Background Video with Subtle Vignette (bright & vivid car view) */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           ref={videoRef}
@@ -101,7 +101,7 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
           loop
           playsInline
           poster="/images/cars/hero.jpg"
-          className="absolute inset-0 w-full h-full object-cover object-center scale-105 filter brightness-[0.45] contrast-[1.12] transition-opacity duration-1000"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-105 filter brightness-[0.75] contrast-[1.08] transition-opacity duration-1000"
         >
           <source src={currentVideo.src} type="video/mp4" />
           {/* Fallback image */}
@@ -111,74 +111,30 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center filter brightness-[0.45] contrast-[1.1]"
+            className="object-cover object-center filter brightness-[0.7] contrast-[1.08]"
           />
         </video>
 
-        {/* Ambient Dark Overlays for Contrast & Readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/50 to-black/80 pointer-events-none" />
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-[#0A0A0C]/40 to-[#0A0A0C] pointer-events-none" />
-        
-        {/* Subtle BMW Ambient Glow */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-[#0066B1]/20 blur-[150px] pointer-events-none rounded-full" />
+        {/* Subtle Bottom & Top Gradient for Smooth Blending */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-transparent to-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-[#0A0A0C]/50 pointer-events-none" />
       </div>
 
-      {/* Main Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8">
-        {/* Tagline Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 mb-6"
-        >
-          <Badge variant="m-power" className="px-4 py-1.5 text-xs">
-            <span className="w-2 h-2 rounded-full bg-[#E2231A] animate-pulse inline-block mr-1.5" />
-            Yangi Avlod Flagmanlari 2026
-          </Badge>
-          <span className="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-white/10 border border-white/15 text-neutral-200">
-            <Video className="w-3 h-3 text-[#38bdf8]" />
-            {currentVideo.badge}
-          </span>
-        </motion.div>
-
-        {/* Big Bold Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white uppercase leading-[1.05]"
-        >
-          Sheer Driving <br />
-          <span className="bg-gradient-to-r from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
-            Pleasure
-          </span>
-        </motion.h1>
-
-        {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-6 max-w-2xl mx-auto text-base sm:text-xl text-neutral-300 font-light leading-relaxed"
-        >
-          Bavariya muhandisligining eng yuksak cho‘qqisi: mutlaq dinamika,
-          aqlli innovatsiyalar va har bir soniyada hayajon baxsh etuvchi quvvat.
-        </motion.p>
-
+      {/* Main Hero Content (Clean & Focused on the Driving Car Video) */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col justify-end min-h-[85vh] pb-8">
         {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45 }}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
         >
           <Button
             size="lg"
             variant="primary"
             onClick={onExploreModels}
             rightIcon={<ChevronRight className="w-4 h-4" />}
-            className="w-full sm:w-auto font-semibold px-8 py-4"
+            className="w-full sm:w-auto font-semibold px-8 py-4 shadow-xl shadow-black/50"
           >
             Modellarni ko‘rish
           </Button>
@@ -186,7 +142,7 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
             size="lg"
             variant="secondary"
             onClick={onOpenTestDrive}
-            className="w-full sm:w-auto font-semibold px-8 py-4 border-white/20 hover:border-white/40"
+            className="w-full sm:w-auto font-semibold px-8 py-4 backdrop-blur-md bg-black/40 border-white/20 hover:border-white/40 shadow-xl"
           >
             Test-Drive ga yozilish
           </Button>
