@@ -253,53 +253,6 @@ export function ConfiguratorStudio({
                   {activeHex}
                 </span>
               </div>
-
-              {/* Bottom Perspective Switcher Buttons */}
-              <div className="absolute bottom-4 inset-x-0 flex items-center justify-center gap-2 z-20">
-                <div className="bg-black/75 backdrop-blur-md p-1 rounded-full border border-white/10 flex items-center gap-1 shadow-lg">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setCustomizationTab('paint');
-                      setSelectedViewIndex(0);
-                    }}
-                    className={`px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer ${
-                      customizationTab === 'paint' && selectedViewIndex === 0
-                        ? 'bg-white text-black font-bold shadow'
-                        : 'text-neutral-400 hover:text-white'
-                    }`}
-                  >
-                    Old ko‘rinish
-                  </button>
-                  {currentCar.gallery.length > 1 && (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setCustomizationTab('paint');
-                        setSelectedViewIndex(1);
-                      }}
-                      className={`px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer ${
-                        customizationTab === 'paint' && selectedViewIndex === 1
-                          ? 'bg-white text-black font-bold shadow'
-                          : 'text-neutral-400 hover:text-white'
-                      }`}
-                    >
-                      Burchak
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => setCustomizationTab('interior')}
-                    className={`px-3 py-1 rounded-full text-[11px] font-medium transition-all cursor-pointer ${
-                      customizationTab === 'interior'
-                        ? 'bg-[#1C69D4] text-white font-bold shadow'
-                        : 'text-neutral-400 hover:text-white'
-                    }`}
-                  >
-                    💺 Salon (Cockpit)
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
 
