@@ -1,35 +1,126 @@
 'use client';
 
 import * as React from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
-import { ChevronRight, Gauge, Zap, ShieldCheck } from 'lucide-react';
+import {
+  ChevronRight,
+  Gauge,
+  Zap,
+  ShieldCheck,
+  Play,
+  Pause,
+  Volume2,
+  VolumeX,
+  Video,
+  Sparkles,
+} from 'lucide-react';
 
 interface HeroSectionProps {
   onExploreModels: () => void;
   onOpenTestDrive: () => void;
 }
 
+const HERO_VIDEOS = [
+  {
+    id: 'highway',
+    label: 'M Highway Dinamika',
+    src: '/videos/bmw-hero-driving.mp4',
+    badge: 'BMW M Motorsport Drive',
+  },
+  {
+    id: 'dusk',
+    label: 'M3 Shahar Harakati',
+    src: '/videos/bmw-m3-dusk-driving.mp4',
+    badge: 'BMW M3 Dusk Motion',
+  },
+];
+
 export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionProps) {
+  const [activeVideoIdx, setActiveVideoIdx] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const currentVideo = HERO_VIDEOS[activeVideoIdx];
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.play().catch(() => {
+          // Autoplay policy fallback: mute and retry
+          if (videoRef.current) {
+            videoRef.current.muted = true;
+            setIsMuted(true);
+            videoRef.current.play().catch(() => {});
+          }
+        });
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isPlaying, activeVideoIdx]);
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      const nextMuted = !isMuted;
+      videoRef.current.muted = nextMuted;
+      setIsMuted(nextMuted);
+    }
+  };
+
+  const switchVideo = (idx: number) => {
+    setActiveVideoIdx(idx);
+    setIsPlaying(true);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
-      {/* Background Image with Dark Vignette and Gradient Layers */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/cars/hero.jpg"
-          alt="BMW Flagship High Performance M8 Gran Coupé"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center scale-105 filter brightness-[0.45] contrast-[1.1]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/50 to-black/80" />
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-[#0A0A0C]/40 to-[#0A0A0C]" />
+      {/* Background Video with Dark Vignette and Gradient Layers */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          ref={videoRef}
+          key={currentVideo.src}
+          autoPlay
+          muted={isMuted}
+          loop
+          playsInline
+          poster="/images/cars/hero.jpg"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-105 filter brightness-[0.45] contrast-[1.12] transition-opacity duration-1000"
+        >
+          <source src={currentVideo.src} type="video/mp4" />
+          {/* Fallback image */}
+          <Image
+            src="/images/cars/hero.jpg"
+            alt="BMW Flagship High Performance M8 Gran Coupé"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center filter brightness-[0.45] contrast-[1.1]"
+          />
+        </video>
+
+        {/* Ambient Dark Overlays for Contrast & Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/50 to-black/80 pointer-events-none" />
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-[#0A0A0C]/40 to-[#0A0A0C] pointer-events-none" />
         
         {/* Subtle BMW Ambient Glow */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#0066B1]/20 blur-[140px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-[#0066B1]/20 blur-[150px] pointer-events-none rounded-full" />
       </div>
 
       {/* Main Hero Content */}
@@ -45,6 +136,10 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
             <span className="w-2 h-2 rounded-full bg-[#E2231A] animate-pulse inline-block mr-1.5" />
             Yangi Avlod Flagmanlari 2026
           </Badge>
+          <span className="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-medium backdrop-blur-md bg-white/10 border border-white/15 text-neutral-200">
+            <Video className="w-3 h-3 text-[#38bdf8]" />
+            {currentVideo.badge}
+          </span>
         </motion.div>
 
         {/* Big Bold Headline */}
@@ -143,6 +238,49 @@ export function HeroSection({ onExploreModels, onOpenTestDrive }: HeroSectionPro
             </span>
           </div>
         </motion.div>
+      </div>
+
+      {/* FLOATING VIDEO CONTROLS (Bottom Right) */}
+      <div className="absolute bottom-6 right-6 z-20 hidden md:flex items-center gap-2 backdrop-blur-xl bg-black/60 border border-white/15 p-1.5 rounded-full shadow-2xl">
+        {/* Scene switcher buttons */}
+        <div className="flex items-center gap-1 pr-1 border-r border-white/10">
+          {HERO_VIDEOS.map((v, idx) => (
+            <button
+              key={v.id}
+              type="button"
+              onClick={() => switchVideo(idx)}
+              className={`px-3 py-1 rounded-full text-[11px] font-semibold transition-all cursor-pointer ${
+                activeVideoIdx === idx
+                  ? 'bg-white text-black shadow-md'
+                  : 'text-neutral-300 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              {v.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Play/Pause Button */}
+        <button
+          type="button"
+          onClick={togglePlay}
+          aria-label={isPlaying ? 'Videoni to‘xtatish' : 'Videoni davom ettirish'}
+          className="p-2 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+          title={isPlaying ? 'Pauza' : 'Ijro etish'}
+        >
+          {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
+        </button>
+
+        {/* Mute/Unmute Button */}
+        <button
+          type="button"
+          onClick={toggleMute}
+          aria-label={isMuted ? 'Ovozni yoqish' : 'Ovozni o‘chirish'}
+          className="p-2 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+          title={isMuted ? 'Ovozni yoqish' : 'Ovozni o‘chirish'}
+        >
+          {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5 text-[#38bdf8]" />}
+        </button>
       </div>
 
       {/* Down indicator scroll hint */}
