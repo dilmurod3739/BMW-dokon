@@ -77,6 +77,32 @@
       "BMW Laserlight moslashuvchan faralar",
       "Bowers & Wilkins Diamond Surround akustika tizimi",
       "M Carbon keramika tormoz disklari"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -147,6 +173,32 @@
       "Panoramic Sky Lounge LED yoritgichli shisha tom",
       "BMW Interaction Bar sensorli kristalli boshqaruv paneli",
       "Avtomatik ochiluvchi va yopiluvchi eshiklar"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -227,6 +279,32 @@
       "M Drive Professional va M Drift Analyzer",
       "M sport differensiali",
       "Moslashuvchan M osma tizimi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -296,6 +374,32 @@
       "BMW Iconic Glow yoritilgan radiator panjarasi",
       "xOffroad paketi (4 xil yo‘lsizlik rejimi)",
       "Ikki o‘qli pnevmatik osma tizimi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Silverstone II Contemporary Interior Design",
+        "material": "Contemporary charm",
+        "hex": "#D8DADF",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331S%25NrnF94fX5jHS91cetUDfzBdtW75GvAzWhcXzXUrOQeqKSYpRl6swTFAvvhJPMCfhIoKGTLMw1pwauAyTO30OP5L6IjAJ8snRBDFjTgH%25ekxh06FXRTVcwL9cvwJL5kIVJ9qIbusKxiL3uL1mAQJdSeZelEuzVMRMXDSkNh5hQSVA0ogou3NF4Hv5GA0Kc%252gFu4WxfjvUgcP81D36kxbUEqdYp89GsLzjHUiprJk4aGw6ZuAlaptYRSFOX67m5VpdTYCygN6U9mlTv0YxeyX324mI0TQdjcyX23azDxTi5dnkq8NpFzOALU0M5kIFJG4h%25ABKup98JFeWS6iUUKMPVYwtWWhbNmt3PPo90y7jNbHi4TCE49%25wc3lsKiftxdXlrw178z53BtECUkCb27slGAlOQCrXpFXPDlZQ6KQjeXRaYWanKQ5nmPnR1agOybO5JnvIT9jNeO2B3iAPMIjedwFJkBDMztKeueqhk7WeaMLoACPMqhJHFlb1Oou%25KX9EJHSfWQis4%25V1PawK2fNEbntWN10s9O7NnE4riICF1scZqZXsjoKNHOkvoubfkYMskKSc1QeD2kSdaP7sYEBQanCpLb8fnh6TvqFhdnukh8aGzL1mYdP672yzH3OYgMTNIKomlDWLfV91KVZ0pEuTQLDrg2jCil6J4sLGbH8ijnWB"
+      },
+      {
+        "name": "Copper Brown Contemporary Interior Design",
+        "material": "Contemporary charm",
+        "hex": "#7A4832",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331S%25NrnF94fX5jHS91cetUDfzBdtW75GvAzWhcXzXUrOQeqKSYpRl6swTFAvvhJPMCfhIoKGTLMw1pwauAyTO30OP5IsIjAJ8snRBDFjTgH%25ekxh06FXRTVcwL9cvwJL5kIVJ9qIbusKxiL3uL1mJGJdSeZelEuzVMRMXDSkNh5hQSVA0ogou3NF4Hv5GA0Kc%252gFu4WxfjvUgcP81D36kxbUEqdYp89GsLzjHUiprJk4aGw6ZuAlaptYRSFOX67m5VpdTYCygN6U9mlTv0YxeyX324mI0TQdjcyX23azDxTi5dnkq8NpFzOALU0M5kIFJG4h%25ABKup98JFeWS6iUUKMPVYwtWWhbNmt3PPo90y7jNbHi4TCE49%25wc3lsKiftxdXlrw178z53BtECUkCb27slGAlOQCrXpFXPDlZQ6KQjeXRaYWanKQ5nmPnR1agOybO5JnvIT9jNeO2B3iAPMIjedwFJkBDMztKeueqhk7WeaMLoACPMqhJHFlb1Oou%25KX9EJHSfWQis4%25V1PawK2fNEbntWN10s9O7NnE4riICF1scZqZXsjoKNHOkvoubfkYMskKSc1QeD2kSdaP7sYEBQanCpLb8fnh6TvqFhdnukh8aGzL1mYdP672yzH3OYgMTNIKomlDWLfV91KVZ0pEuTQLDrg2jCil6J4sLGbH8ijnWB"
+      },
+      {
+        "name": "Black Contemporary Interior Design",
+        "material": "Contemporary charm",
+        "hex": "#1D1E22",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331S%25NrnF94fX5jHS91cetUDfzBdtW75GvAzWhcXzXUrOQeqKSYpRl6swTFAvvhJPMCfhIoKGTLMw1pwauAyTO30OP5eUIjAJ8snRBDFjTgH%25ekxh06FXRTVcwL9cvwJL5kIVJ9qIbusKxiL3uL1mSCJdSeZelEuzVMRMXDSkNh5hQSVA0ogou3NF4Hv5GA0Kc%252gFu4WxfjvUgcP81D36kxbUEqdYp89GsLzjHUiprJk4aGw6ZuAlaptYRSFOX67m5VpdTYCygN6U9mlTv0YxeyX324mI0TQdjcyX23azDxTi5dnkq8NpFzOALU0M5kIFJG4h%25ABKup98JFeWS6iUUKMPVYwtWWhbNmt3PPo90y7jNbHi4TCE49%25wc3lsKiftxdXlrw178z53BtECUkCb27slGAlOQCrXpFXPDlZQ6KQjeXRaYWanKQ5nmPnR1agOybO5JnvIT9jNeO2B3iAPMIjedwFJkBDMztKeueqhk7WeaMLoACPMqhJHFlb1Oou%25KX9EJHSfWQis4%25V1PawK2fNEbntWN10s9O7NnE4riICF1scZqZXsjoKNHOkvoubfkYMskKSc1QeD2kSdaP7sYEBQanCpLb8fnh6TvqFhdnukh8aGzL1mYdP672yzH3OYgMTNIKomlDWLfV91KVZ0pEuTQLDrg2jCil6J4sLGbH8ijnWB"
+      },
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -370,6 +474,32 @@
       "Panoramic Sky Lounge LED yulduzli shift",
       "Integral faol rul boshqaruvi (orqa g‘ildiraklar burilishi)",
       "Executive Drive Pro faol barqarorlashtirish tizimi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Silverstone Sensafin",
+        "material": "Sensafin charm",
+        "hex": "#D8DADF",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Aww1p7LB9htE6GVc8U%25MfbYzSMxBDFzf3D%25kxhGddnkd9negzOALULRckIFJGJ5TABKupugAFeWS6SkFKMPVYVfaWhbNm6piPo90yYdbbHi4TmoY9%25wc3y7miftxdIXMw178zBQltECUke307slGAM9QCrXpFhislZQ6KovDXRaYWHyAQ5nmPXFRagOybQCsnvIT9alSO2B3in7qIjedwOufBDMztIW9eqhk7BNeMLoACeRThJHFlM5hou%25KXw0KHSfWQt4R%25V1Pa7cdfNEbnCxj10s9Ol%25zE4riIgvsscZwBvhrrxRte2AGZ857Mj67RUgChDYE5GvloqmWgp2XHLbxv6jQ%25JLn2YDafuAPjmqn1ScFDyLOEAwdqTJIsJvWL3uBru46JdSeZScNuzVMRVxSSkNh5N2iVA0og09GNF4Hv4jB0Kc%252cxv4WxfjxKdcP81D8CjxbUEqiap89GsL9liprPo90yosHnMMLoACL0J5aDyLOEyAT8EYCygNCOl1WtECUkEgsRffNEbnthp10s9O78wE4riICs1scZwBlgHrxRteXvcZ857MQ26RUgChatS5GvlonUhgp2XHOddv6jQ%25Iwr2YDafBtLjmqn1e72DyLcLhD0RC65fwVRUQRqWHIBJeiJ8dFauzHKQl6gXUrOohyyVAfyq3VraezL14UDyeJkgoKGdkm1BZNRLAFe0B7b9iKVZ3JOiXNxfrYXUi561exy1rwXYucWF1wn5DDyej1uDgqIbCmjHS94mvhD%25Vivev7Gq2"
+      },
+      {
+        "name": "Coffee Sensafin",
+        "material": "Sensafin charm",
+        "hex": "#4A3528",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Aww1p7LB9htE6GVc8U%25MfbYzSMxBDFzf3D%25kxhGddnkd9nVszOALULRckIFJGJ5TABKupugAFeWS6SkFKMPVYVfaWhbNm6piPo90yYdbbHi4TmoY9%25wc3y7miftxdIXMw178zBQltECUke307slGAM9QCrXpFhislZQ6KovDXRaYWHyAQ5nmPXFRagOybQCsnvIT9alSO2B3in7qIjedwOufBDMztIW9eqhk7BNeMLoACeRThJHFlM5hou%25KXw0KHSfWQt4R%25V1Pa7cdfNEbnCxj10s9Ol%25zE4riIgvsscZwBvhrrxRte2AGZ857Mj67RUgChDYE5GvloqmWgp2XHLbxv6jQ%25JLn2YDafuAPjmqn1ScFDyLOEAwdqTJIsJvWL3uBru46JdSeZScNuzVMRVxSSkNh5N2iVA0og09GNF4Hv4jB0Kc%252cxv4WxfjxKdcP81D8CjxbUEqiap89GsL9liprPo90yosHnMMLoACL0J5aDyLOEyAT8EYCygNCOl1WtECUkEgsRffNEbnthp10s9O78wE4riICs1scZwBlgHrxRteXvcZ857MQ26RUgChatS5GvlonUhgp2XHOddv6jQ%25Iwr2YDafBtLjmqn1e72DyLcLhD0RC65fwVRUQRqWHIBJeiJ8d%257uzHKQl6gXUrOohyyVAfyq3VraezL14UDyeJkgoKGdkm1BZNRLAFe0B7b9iKVZ3JOiXNxfrYXUi561exy1rwXYucWF1wn5DDyej1uDgqIbCmjHS94mvhD%25Vivev7Gq2"
+      },
+      {
+        "name": "Cognac Sensafin",
+        "material": "Sensafin charm",
+        "hex": "#935529",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Aww1p7LB9htE6GVc8U%25MfbYzSMxBDFzf3D%25kxhGddnkd9nG0zOALULRckIFJGJ5TABKupugAFeWS6SkFKMPVYVfaWhbNm6piPo90yYdbbHi4TmoY9%25wc3y7miftxdIXMw178zBQltECUke307slGAM9QCrXpFhislZQ6KovDXRaYWHyAQ5nmPXFRagOybQCsnvIT9alSO2B3in7qIjedwOufBDMztIW9eqhk7BNeMLoACeRThJHFlM5hou%25KXw0KHSfWQt4R%25V1Pa7cdfNEbnCxj10s9Ol%25zE4riIgvsscZwBvhrrxRte2AGZ857Mj67RUgChDYE5GvloqmWgp2XHLbxv6jQ%25JLn2YDafuAPjmqn1ScFDyLOEAwdqTJIsJvWL3uBru46JdSeZScNuzVMRVxSSkNh5N2iVA0og09GNF4Hv4jB0Kc%252cxv4WxfjxKdcP81D8CjxbUEqiap89GsL9liprPo90yosHnMMLoACL0J5aDyLOEyAT8EYCygNCOl1WtECUkEgsRffNEbnthp10s9O78wE4riICs1scZwBlgHrxRteXvcZ857MQ26RUgChatS5GvlonUhgp2XHOddv6jQ%25Iwr2YDafBtLjmqn1e72DyLcLhD0RC65fwVRUQRqWHIBJeiJ8d51uzHKQl6gXUrOohyyVAfyq3VraezL14UDyeJkgoKGdkm1BZNRLAFe0B7b9iKVZ3JOiXNxfrYXUi561exy1rwXYucWF1wn5DDyej1uDgqIbCmjHS94mvhD%25Vivev7Gq2"
+      },
+      {
+        "name": "Black Sensafin",
+        "material": "Sensafin charm",
+        "hex": "#1C1D21",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Aww1p7LB9htE6GVc8U%25MfbYzSMxBDFzf3D%25kxhGddnkd9nAZzOALULRckIFJGJ5TABKupugAFeWS6SkFKMPVYVfaWhbNm6piPo90yYdbbHi4TmoY9%25wc3y7miftxdIXMw178zBQltECUke307slGAM9QCrXpFhislZQ6KovDXRaYWHyAQ5nmPXFRagOybQCsnvIT9alSO2B3in7qIjedwOufBDMztIW9eqhk7BNeMLoACeRThJHFlM5hou%25KXw0KHSfWQt4R%25V1Pa7cdfNEbnCxj10s9Ol%25zE4riIgvsscZwBvhrrxRte2AGZ857Mj67RUgChDYE5GvloqmWgp2XHLbxv6jQ%25JLn2YDafuAPjmqn1ScFDyLOEAwdqTJIsJvWL3uBru46JdSeZScNuzVMRVxSSkNh5N2iVA0og09GNF4Hv4jB0Kc%252cxv4WxfjxKdcP81D8CjxbUEqiap89GsL9liprPo90yosHnMMLoACL0J5aDyLOEyAT8EYCygNCOl1WtECUkEgsRffNEbnthp10s9O78wE4riICs1scZwBlgHrxRteXvcZ857MQ26RUgChatS5GvlonUhgp2XHOddv6jQ%25Iwr2YDafBtLjmqn1e72DyLcLhD0RC65fwVRUQRqWHIBJeiJ8dVluzHKQl6gXUrOohyyVAfyq3VraezL14UDyeJkgoKGdkm1BZNRLAFe0B7b9iKVZ3JOiXNxfrYXUi561exy1rwXYucWF1wn5DDyej1uDgqIbCmjHS94mvhD%25Vivev7Gq2"
+      }
     ]
   },
   {
@@ -449,6 +579,32 @@
       "Orqa o‘qning boshqarilishi (Integral Active Steering)",
       "M xDrive tizimida toza orqa uzatmali (2WD) rejim",
       "M Carbon tomi va poyga tormozlari"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -528,6 +684,32 @@
       "M Carbon tomi va sport egzoz tizimi",
       "BMW Curved Display M-dizaynli interfeys",
       "Moslashuvchan M sport osmasi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -596,6 +778,32 @@
       "AirConsole avtomobil ichidagi o‘yin platformasi",
       "BMW Interaction Bar kristalli yoritgich",
       "582 km gacha elektr masofasi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Smoke White Perforated and Quilted Veganza",
+        "material": "Quilted Veganza charm",
+        "hex": "#E2E3E7",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5f9w1p7LB9htE6GVc8U%25MfbYzSCVBDFzf3D%25kxhaTdnkd9YMnzOAwANz9YgQmxZPYCygNSu3mlTv0VACyX324NzVTQdjc0kF3azDxiKAdnkq8w4BzOALUtcvkIFJG7TWABKupCBJFeWS6lX0KMPVYX0dWhbNmKtrPo90yWolbHi4TPzu9%25wc3bnHiftxd92hw178ziRntECUkw127slGAtMUCrXpF7hclZQ6KColXRaYWlOwQ5nmPkiIagOybAD8nvIT9Fq1O2B3iKa9IjedwWnsBDMztPgIeqhk7f1MMLoAC1QhhJHFlEYjou%25KXs0KHSfWQr4e%25V1PaZcTfNEbnRdJ10s9O5RwE4riIgY3scZwB6vVrxRteYOVZ857MmNNRUgChyK55Gvlovsdgp2XH2JDv6jQ%25ju22YDafDsAjmqn1qsCDyLOELJ1qTJIsJyGL3uBruWBJdSeZSPruzVMRADSSkNh5Ft4VA0ogKkqNF4HvWAx0Kc%252KwWTWABKupB%25elpO2B3i2ujGjgp2XHOyav6jQ%25Ini2YDafBJZjmqn1euYDyLOEMSzqTJIshn8L3uBroTsJdSeZHQLuzVMR%255JSk%25S8QvsrGZIGz4XwptvX%25oKNHkJEg5bbYCjb8iYJfZtUDTkxbZG7NgXAw7PDrumSUClZyrMnOIXYuiGEIHmdjJWHkIVKDZdbDJBHWp3QlDD2VGxbZcDpxN8snhPcv6OTP05x2YI0Z0MA84"
+      },
+      {
+        "name": "Burgundy Red Perforated and Quilted Veganza",
+        "material": "Quilted Veganza charm",
+        "hex": "#671C25",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5f9w1p7LB9htE6GVc8U%25MfbYzSCVBDFzf3D%25kxhaTdnkd9YznzOAwANz9YgQmxZPYCygNSu3mlTv0VACyX324NzVTQdjc0kF3azDxiKAdnkq8w4BzOALUtcvkIFJG7TWABKupCBJFeWS6lX0KMPVYX0dWhbNmKtrPo90yWolbHi4TPzu9%25wc3bnHiftxd92hw178ziRntECUkw127slGAtMUCrXpF7hclZQ6KColXRaYWlOwQ5nmPkiIagOybAD8nvIT9Fq1O2B3iKa9IjedwWnsBDMztPgIeqhk7f1MMLoAC1QhhJHFlEYjou%25KXs0KHSfWQr4e%25V1PaZcTfNEbnRdJ10s9O5RwE4riIgY3scZwB6vVrxRteYOVZ857MmNNRUgChyK55Gvlovsdgp2XH2JDv6jQ%25ju22YDafDsAjmqn1qsCDyLOELJ1qTJIsJyGL3uBruWBJdSeZSPruzVMRADSSkNh5Ft4VA0ogKkqNF4HvWAx0Kc%252KwWTWABKupB%25elpO2B3i2ujGjgp2XHOyav6jQ%25Ini2YDafBJZjmqn1euYDyLOEMSzqTJIshn8L3uBroTsJdSeZHQLuzVMR%255JSk%25S8QvsrGZIGz4pwptvX%25oKNHkJEg5bbYCjb8iYJfZtUDTkxbZG7NgXAw7PDrumSUClZyrMnOIXYuiGEIHmdjJWHkIVKDZdbDJBHWp3QlDD2VGxbZcDpxN8snhPcv6OTP05x2YI0Z0MA84"
+      },
+      {
+        "name": "Espresso Brown Perforated and Quilted Veganza",
+        "material": "Quilted Veganza charm",
+        "hex": "#3E2B22",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5f9w1p7LB9htE6GVc8U%25MfbYzSCVBDFzf3D%25kxhaTdnkd9YzJzOAwANz9YgQmxZPYCygNSu3mlTv0VACyX324NzVTQdjc0kF3azDxiKAdnkq8w4BzOALUtcvkIFJG7TWABKupCBJFeWS6lX0KMPVYX0dWhbNmKtrPo90yWolbHi4TPzu9%25wc3bnHiftxd92hw178ziRntECUkw127slGAtMUCrXpF7hclZQ6KColXRaYWlOwQ5nmPkiIagOybAD8nvIT9Fq1O2B3iKa9IjedwWnsBDMztPgIeqhk7f1MMLoAC1QhhJHFlEYjou%25KXs0KHSfWQr4e%25V1PaZcTfNEbnRdJ10s9O5RwE4riIgY3scZwB6vVrxRteYOVZ857MmNNRUgChyK55Gvlovsdgp2XH2JDv6jQ%25ju22YDafDsAjmqn1qsCDyLOELJ1qTJIsJyGL3uBruWBJdSeZSPruzVMRADSSkNh5Ft4VA0ogKkqNF4HvWAx0Kc%252KwWTWABKupB%25elpO2B3i2ujGjgp2XHOyav6jQ%25Ini2YDafBJZjmqn1euYDyLOEMSzqTJIshn8L3uBroTsJdSeZHQLuzVMR%255JSk%25S8QvsrGZIGz4p5ptvX%25oKNHkJEg5bbYCjb8iYJfZtUDTkxbZG7NgXAw7PDrumSUClZyrMnOIXYuiGEIHmdjJWHkIVKDZdbDJBHWp3QlDD2VGxbZcDpxN8snhPcv6OTP05x2YI0Z0MA84"
+      },
+      {
+        "name": "Black Perforated and Quilted Veganza",
+        "material": "Quilted Veganza charm",
+        "hex": "#1A1B1E",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5f9w1p7LB9htE6GVc8U%25MfbYzSCVBDFzf3D%25kxhaTdnkd9YAZzOAwANz9YgQmxZPYCygNSu3mlTv0VACyX324NzVTQdjc0kF3azDxiKAdnkq8w4BzOALUtcvkIFJG7TWABKupCBJFeWS6lX0KMPVYX0dWhbNmKtrPo90yWolbHi4TPzu9%25wc3bnHiftxd92hw178ziRntECUkw127slGAtMUCrXpF7hclZQ6KColXRaYWlOwQ5nmPkiIagOybAD8nvIT9Fq1O2B3iKa9IjedwWnsBDMztPgIeqhk7f1MMLoAC1QhhJHFlEYjou%25KXs0KHSfWQr4e%25V1PaZcTfNEbnRdJ10s9O5RwE4riIgY3scZwB6vVrxRteYOVZ857MmNNRUgChyK55Gvlovsdgp2XH2JDv6jQ%25ju22YDafDsAjmqn1qsCDyLOELJ1qTJIsJyGL3uBruWBJdSeZSPruzVMRADSSkNh5Ft4VA0ogKkqNF4HvWAx0Kc%252KwWTWABKupB%25elpO2B3i2ujGjgp2XHOyav6jQ%25Ini2YDafBJZjmqn1euYDyLOEMSzqTJIshn8L3uBroTsJdSeZHQLuzVMR%255JSk%25S8QvsrGZIGz4YoptvX%25oKNHkJEg5bbYCjb8iYJfZtUDTkxbZG7NgXAw7PDrumSUClZyrMnOIXYuiGEIHmdjJWHkIVKDZdbDJBHWp3QlDD2VGxbZcDpxN8snhPcv6OTP05x2YI0Z0MA84"
+      }
     ]
   },
   {
@@ -664,6 +872,32 @@
       "xDrive aqlli to‘liq tortish tizimi",
       "Yurish rejimini moslashtiruvchi My Modes",
       "Kengaytirilgan haydovchiga yordam tizimi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Smoke White Perforated Veganza",
+        "material": "Perforated Veganza",
+        "hex": "#E2E3E7",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Liw1p7LB9htE6GVc8U%25MfbYzS6bBDFzf3D%25kxhs3dnkd9AMnzOALULMIkIFJGJ5xABKupuzQFeWS6SGiKMPVYpegWhbNm6ipPo90yYw7bHi4TnCt9%25wc3OK7iftxdIr5w178zBGTtECUkwbo7slGAtsHCrXpF7r9lZQ6KCbxXRaYWluEQ5nmPXjLagOybQexnvIT9FqZO2B3iKL3IjedwWJsBDMztPOweqhk7f1MMLoAC1QhhJHFlENFou%25KXs0BHSfWQrsb%25V1PaZGmfNEbnU3110s9OGaqE4riIplkscZwBZ%25mrxRteRjgZ857M5HTRUgChgyL5Gvlov%25igp2XH2jov6jQ%25jpc2YDafyRjjmqn1TWJDyLOE3l8qTJIsdyLL3uBroAMJdSeZHuFuzVMR%25SJSkNh5fcDVA0og1xkNF4HvE8b0Kc%252soy4WxfjrK2cP81DZCLxbUEqRhc89GdGg8TVoWNDemVAfVUa2rZpRBpkmQt672QfHW0%25Ausvg99mlD9Uwmu1R7Gq3A89RpC0vQFtCbqZSyVGlXRTZhOIBQmSwpsB%25yzDuP%25ABNWqRz9que%25P6daXqeENF89Rxq680UrOobx2YI3b4g8jmB4R4hFUc"
+      },
+      {
+        "name": "Castanea Perforated Veganza",
+        "material": "Perforated Veganza",
+        "hex": "#633B2E",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Liw1p7LB9htE6GVc8U%25MfbYzS6bBDFzf3D%25kxhs3dnkd9ADqzOALULMIkIFJGJ5xABKupuzQFeWS6SGiKMPVYpegWhbNm6ipPo90yYw7bHi4TnCt9%25wc3OK7iftxdIr5w178zBGTtECUkwbo7slGAtsHCrXpF7r9lZQ6KCbxXRaYWluEQ5nmPXjLagOybQexnvIT9FqZO2B3iKL3IjedwWJsBDMztPOweqhk7f1MMLoAC1QhhJHFlENFou%25KXs0BHSfWQrsb%25V1PaZGmfNEbnU3110s9OGaqE4riIplkscZwBZ%25mrxRteRjgZ857M5HTRUgChgyL5Gvlov%25igp2XH2jov6jQ%25jpc2YDafyRjjmqn1TWJDyLOE3l8qTJIsdyLL3uBroAMJdSeZHuFuzVMR%25SJSkNh5fcDVA0og1xkNF4HvE8b0Kc%252soy4WxfjrK2cP81DZCLxbUEqRhc89GdGg8TVoWNDemVAfVUa2rZpRBpkmZR672QfHW0%25Ausvg99mlD9Uwmu1R7Gq3A89RpC0vQFtCbqZSyVGlXRTZhOIBQmSwpsB%25yzDuP%25ABNWqRz9que%25P6daXqeENF89Rxq680UrOobx2YI3b4g8jmB4R4hFUc"
+      },
+      {
+        "name": "Atlas Grey/Smoke White Bicolor Perforated Veganza",
+        "material": "Bicolor Veganza charm",
+        "hex": "#B0B4BC",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Liw1p7LB9htE6GVc8U%25MfbYzS6bBDFzf3D%25kxhs3dnkd9AhszOALULMIkIFJGJ5xABKupuzQFeWS6SGiKMPVYpegWhbNm6ipPo90yYw7bHi4TnCt9%25wc3OK7iftxdIr5w178zBGTtECUkwbo7slGAtsHCrXpF7r9lZQ6KCbxXRaYWluEQ5nmPXjLagOybQexnvIT9FqZO2B3iKL3IjedwWJsBDMztPOweqhk7f1MMLoAC1QhhJHFlENFou%25KXs0BHSfWQrsb%25V1PaZGmfNEbnU3110s9OGaqE4riIplkscZwBZ%25mrxRteRjgZ857M5HTRUgChgyL5Gvlov%25igp2XH2jov6jQ%25jpc2YDafyRjjmqn1TWJDyLOE3l8qTJIsdyLL3uBroAMJdSeZHuFuzVMR%25SJSkNh5fcDVA0og1xkNF4HvE8b0Kc%252soy4WxfjrK2cP81DZCLxbUEqRhc89GdGg8TVoWNDemVAfVUa2rZpRBpkmah672QfHW0%25Ausvg99mlD9Uwmu1R7Gq3A89RpC0vQFtCbqZSyVGlXRTZhOIBQmSwpsB%25yzDuP%25ABNWqRz9que%25P6daXqeENF89Rxq680UrOobx2YI3b4g8jmB4R4hFUc"
+      },
+      {
+        "name": "Black Perforated Veganza",
+        "material": "Perforated Veganza",
+        "hex": "#1A1B1E",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331c9Nv2Z7d5yKlHS9Y3BUO30BGUV7sYlvAEKCpL9b7OPoxQUjYODXYuyFqp9%25UtXqCRix27d5Liw1p7LB9htE6GVc8U%25MfbYzS6bBDFzf3D%25kxhs3dnkd9AAZzOALULMIkIFJGJ5xABKupuzQFeWS6SGiKMPVYpegWhbNm6ipPo90yYw7bHi4TnCt9%25wc3OK7iftxdIr5w178zBGTtECUkwbo7slGAtsHCrXpF7r9lZQ6KCbxXRaYWluEQ5nmPXjLagOybQexnvIT9FqZO2B3iKL3IjedwWJsBDMztPOweqhk7f1MMLoAC1QhhJHFlENFou%25KXs0BHSfWQrsb%25V1PaZGmfNEbnU3110s9OGaqE4riIplkscZwBZ%25mrxRteRjgZ857M5HTRUgChgyL5Gvlov%25igp2XH2jov6jQ%25jpc2YDafyRjjmqn1TWJDyLOE3l8qTJIsdyLL3uBroAMJdSeZHuFuzVMR%25SJSkNh5fcDVA0og1xkNF4HvE8b0Kc%252soy4WxfjrK2cP81DZCLxbUEqRhc89GdGg8TVoWNDemVAfVUa2rZpRBpkmmH672QfHW0%25Ausvg99mlD9Uwmu1R7Gq3A89RpC0vQFtCbqZSyVGlXRTZhOIBQmSwpsB%25yzDuP%25ABNWqRz9que%25P6daXqeENF89Rxq680UrOobx2YI3b4g8jmB4R4hFUc"
+      }
     ]
   },
   {
@@ -732,6 +966,32 @@
       "M Sport tormozlari va egzoz tizimi",
       "BMW Live Cockpit Professional",
       "Sport transmissiya va rul quloqchalari"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -800,6 +1060,32 @@
       "Ixtiyoriy 6-pog‘onali mexanik uzatmalar qutisi",
       "Faol M differensial tizimi",
       "M Carbon sport o‘rindiqlari"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -868,6 +1154,32 @@
       "Orqa eshiklarga o‘rnatilgan 5.5 dyuymli sensorli boshqaruv paneli",
       "Bowers & Wilkins 4D akustik tizimi (1965 Vt)",
       "Executive Drive Pro faol osma tizimi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -941,6 +1253,32 @@
       "BMW IconicSounds Electric (Hans Zimmer musiqasi)",
       "M Sport aerodinamik disklari",
       "Moslashuvchan osma tizimi"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -1009,6 +1347,32 @@
       "BMW Curved Display va iDrive 8.5",
       "M Sport paketi va sport o‘rindiqlar",
       "Ko‘p funksiyali faol xavfsizlik assistentlari"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -1087,6 +1451,32 @@
       "M Sport egzoz tizimi 4 ta qora xrom trubka bilan",
       "M Carbon tola salon bezaklari",
       "Harman Kardon / Bowers & Wilkins premium akustika"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   },
   {
@@ -1160,6 +1550,32 @@
       "7.4 kVt AC zaryadlash quvvati (3 soatda 100%)",
       "BMW Curved Display va Interaction Bar",
       "Moslashuvchan M podveska Professional"
+    ],
+    "interiorColors": [
+      {
+        "name": "Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#151619",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5WGe89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8e9jPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Tartufo Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#874D28",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjFPZ89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6IMcPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Silverstone/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#D2D4D9",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUx5W1O89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW8eVgPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      },
+      {
+        "name": "Fiona Red/Black Extended Merino Leather",
+        "material": "BMW Individual Merino charm",
+        "hex": "#991B24",
+        "image": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331L%25LayVJ4Ws8wSRCz9wK2EL6Jxt7sYeySzoVBzcAiN3lZyaBNODXYunWq96Q53yxpYmrfZ7dWcMKHS94mvhD%25VicdTjO3gXA9bLL10tN2ZR5EiyhPS5qwlGmIqQ53nqPR9ayV7tQMw1p8ac1QUDCJfxbUxjF5c89GsLsbbUiprJqT9Gw6ZuLmMptYRSF3y67m5VKJXYCygNWusmlTv0PGdyX324bOQTQdjcyQt3azDxTa6dnkq83pgzOALUd1%25kIFJGzEQABKupklNFeWS6AFQKMPVY8weWhbNmUhIPo90yGCBbHi4Tpzt9%25wc36sciftxdYrIw178zQIftECUkaRU7slGAn5SCrXpFONflZQ6KIOmXRaYWBHOQ5nmPeLmagOybLKBnvIT9JWTO2B3iuZZIjedwSUBBDMztVAmeqhrhPeEQm2awpfQ53RpsBeayVOJx3w1pqSWvFSrW2vEyXqyFExSVWNRW6I8KPoxiS2K7S0HswTFBOSSJxZ672moKGbYCj6V3YUmvhE76Jdo62mJ1lOTjHVc"
+      }
     ]
   }
 ]

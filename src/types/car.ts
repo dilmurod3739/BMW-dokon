@@ -17,6 +17,13 @@ export interface CarColor {
   image?: string;
 }
 
+export interface CarInteriorColor {
+  name: string;
+  material: string;
+  hex: string;
+  image: string;
+}
+
 export interface Car {
   id: string;
   name: string;
@@ -31,6 +38,7 @@ export interface Car {
   specs: CarSpecs;
   description: string;
   colors: CarColor[];
+  interiorColors?: CarInteriorColor[];
   highlights: string[];
 }
 

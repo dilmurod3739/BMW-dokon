@@ -226,3 +226,30 @@ describe('Color Selection & Dynamic Visual Transitions Logic', () => {
     assert.ok(defaultNotes.includes(selectedColor.hex));
   });
 });
+
+describe('BMW Cars Interior Color Integrity', () => {
+  test('all cars in CARS_DATA have at least 4 distinct interior color options', () => {
+    for (const car of CARS_DATA) {
+      assert.ok(
+        car.interiorColors && car.interiorColors.length >= 4,
+        `Car ${car.name} (${car.id}) must have at least 4 interior colors`
+      );
+      for (const ic of car.interiorColors) {
+        assert.ok(ic.name && ic.name.trim().length > 0, 'Interior color name must not be empty');
+        assert.ok(ic.material && ic.material.trim().length > 0, 'Material must not be empty');
+        assert.match(ic.hex, /^#[0-9A-Fa-f]{6}$/, `Interior hex ${ic.hex} must be #RRGGBB`);
+        assert.ok(ic.image && ic.image.startsWith('https://'), 'Interior render image must be valid URL');
+      }
+    }
+  });
+
+  test('interior colors include essential luxury palettes: Black, Brown/Cognac, Light/Silverstone, Red/Sport', () => {
+    const m4 = CARS_DATA.find((c) => c.id === 'bmw-m4-competition-coupe')!;
+    assert.ok(m4.interiorColors && m4.interiorColors.length >= 4);
+    const names = m4.interiorColors.map((i) => i.name.toLowerCase());
+    assert.ok(names.some((n) => n.includes('black')));
+    assert.ok(names.some((n) => n.includes('tartufo') || n.includes('cognac') || n.includes('brown')));
+    assert.ok(names.some((n) => n.includes('silverstone') || n.includes('white')));
+    assert.ok(names.some((n) => n.includes('red') || n.includes('orange')));
+  });
+});
