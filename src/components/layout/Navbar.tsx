@@ -15,7 +15,6 @@ import {
   Scale,
   ChevronDown,
   MapPin,
-  Search,
   Sparkles,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -189,28 +188,6 @@ export function Navbar({
                 <Scale className="w-4 h-4 text-neutral-300" />
               </button>
             )}
-
-            {/* Quick Catalog Search trigger */}
-            <button
-              type="button"
-              onClick={() => handleNavClick(undefined, 'catalog')}
-              className="p-2 rounded-xl text-neutral-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
-              title="Avtomobillarni qidirish"
-              aria-label="Avtomobillarni qidirish"
-            >
-              <Search className="w-4 h-4 text-neutral-300" />
-            </button>
-
-            {/* Test Drive CTA */}
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => onOpenTestDrive()}
-              leftIcon={<Phone className="w-3.5 h-3.5" />}
-              className="hidden sm:inline-flex border-white/20 hover:border-white/40"
-            >
-              Test-Drive
-            </Button>
 
             {/* Mobile Menu Button */}
             <button
