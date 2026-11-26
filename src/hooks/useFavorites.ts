@@ -61,3 +61,4 @@ export function useFavorites() {
     count: favoriteIds.length,
   };
 }
+

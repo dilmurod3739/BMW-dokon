@@ -65,66 +65,42 @@ export function CarCard({
       <div>
         {/* Top Image Stage Container with Isolated Stacking Context */}
         <div className="relative h-56 sm:h-64 w-full overflow-hidden bg-neutral-900 isolate">
-          <Image
-            src={car.heroImage}
-            alt={`${car.name} — ${activeColor.name}`}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-          />
+          <AnimatePresence mode="popLayout">
+            <motion.div
+              key={`card-img-${car.id}-${activeColor.image || car.heroImage}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.35, ease: 'easeInOut' }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <Image
+                src={activeColor.image || car.heroImage}
+                alt={`${car.name} — ${activeColor.name}`}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+              />
+            </motion.div>
+          </AnimatePresence>
 
           {/* Ambient Underglow / Ground Reflection Layer (Cross-fading) */}
           <AnimatePresence mode="popLayout">
             <motion.div
               key={`card-underglow-${car.id}-${activeColor.hex}`}
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              animate={{ opacity: 0.7 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.45, ease: 'easeInOut' }}
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-20 pointer-events-none blur-xl"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-16 pointer-events-none blur-xl"
               style={{
-                background: getAmbientUnderglowBackground(activeColor.hex, 0.8),
-              }}
-            />
-          </AnimatePresence>
-
-          {/* Vehicle Color Tint Overlay (Cross-fading with specific blend mode) */}
-          <AnimatePresence mode="popLayout">
-            <motion.div
-              key={`card-tint-${car.id}-${activeColor.hex}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: getColorTintOpacity(activeColor.hex) }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.45, ease: 'easeInOut' }}
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                backgroundColor: activeColor.hex,
-                mixBlendMode: getColorBlendMode(activeColor.hex),
-              }}
-            />
-          </AnimatePresence>
-
-          {/* Specular Sheen / Metallic Reflection */}
-          <AnimatePresence mode="popLayout">
-            <motion.div
-              key={`card-sheen-${car.id}-${activeColor.hex}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.45, ease: 'easeInOut' }}
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: `linear-gradient(135deg, ${hexToRgba(
-                  activeColor.hex,
-                  0.22
-                )} 0%, transparent 45%, ${hexToRgba(activeColor.hex, 0.18)} 100%)`,
-                mixBlendMode: 'soft-light',
+                background: getAmbientUnderglowBackground(activeColor.hex, 0.6),
               }}
             />
           </AnimatePresence>
 
           {/* Subtle gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121316] via-transparent to-black/40 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121316] via-transparent to-black/30 pointer-events-none" />
 
           {/* Top Badges and Action Icons */}
           <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-20">

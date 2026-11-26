@@ -13,7 +13,7 @@ export const CARS_DATA: Car[] = [
     heroImage: '/images/cars/m8.jpg',
     gallery: [
       '/images/cars/m8.jpg',
-      '/images/cars/hero.jpg',
+      '/images/cars/m8-blue.jpg',
       '/images/cars/interior.jpg',
     ],
     specs: {
@@ -29,10 +29,10 @@ export const CARS_DATA: Car[] = [
     description:
       'BMW M8 Competition Gran Coupé – bu motorsport DNKsi va to‘rt eshikli kupe qulayligining mutlaq cho‘qqisi. Har bir detal haydashdan eng yuqori zavq olish uchun loyihalashtirilgan.',
     colors: [
-      { name: 'Isle of Man Green', hex: '#1B4D3E' },
-      { name: 'Frozen Marina Bay Blue', hex: '#1C69D4' },
-      { name: 'Black Sapphire Metallic', hex: '#0D0D0E' },
-      { name: 'Alpine White', hex: '#F0F0F0' },
+      { name: 'Isle of Man Green', hex: '#1B4D3E', image: '/images/cars/m8.jpg' },
+      { name: 'Frozen Marina Bay Blue', hex: '#1C69D4', image: '/images/cars/m8-blue.jpg' },
+      { name: 'Black Sapphire Metallic', hex: '#0D0D0E', image: '/images/cars/m8-black.jpg' },
+      { name: 'Alpine White', hex: '#F0F0F0', image: '/images/cars/hero.jpg' },
     ],
     highlights: [
       'M xDrive aqlli to‘liq tortish tizimi (2WD Drift rejimiga ega)',
@@ -53,7 +53,7 @@ export const CARS_DATA: Car[] = [
     heroImage: '/images/cars/i7.jpg',
     gallery: [
       '/images/cars/i7.jpg',
-      '/images/cars/760i.jpg',
+      '/images/cars/i7-blue.jpg',
       '/images/cars/interior.jpg',
     ],
     specs: {
@@ -69,10 +69,10 @@ export const CARS_DATA: Car[] = [
     description:
       'BMW i7 – kelajak hashamati bugun. Orqa qatordagi 31.3 dyuymli 8K BMW Theatre Screen, kristall elementlar va to‘liq shovqinsiz silliq harakat yangi dunyo tajribasini taqdim etadi.',
     colors: [
-      { name: 'Two-tone Oxide Grey / Black', hex: '#4B4D52' },
-      { name: 'Tanzanite Blue Metallic', hex: '#0B2341' },
-      { name: 'Dravit Grey', hex: '#63666A' },
-      { name: 'Mineral White', hex: '#FFFFFF' },
+      { name: 'Two-tone Oxide Grey / Black', hex: '#4B4D52', image: '/images/cars/i7.jpg' },
+      { name: 'Tanzanite Blue Metallic', hex: '#0B2341', image: '/images/cars/i7-blue.jpg' },
+      { name: 'Dravit Grey', hex: '#63666A', image: '/images/cars/760i.jpg' },
+      { name: 'Black Sapphire', hex: '#111213', image: '/images/cars/i7-black.jpg' },
     ],
     highlights: [
       '31.3" 8K BMW Theatre Screen orqa multimedia ekrani',
@@ -93,7 +93,7 @@ export const CARS_DATA: Car[] = [
     heroImage: '/images/cars/m4.jpg',
     gallery: [
       '/images/cars/m4.jpg',
-      '/images/cars/m8.jpg',
+      '/images/cars/m4-red.jpg',
       '/images/cars/interior.jpg',
     ],
     specs: {
@@ -109,10 +109,10 @@ export const CARS_DATA: Car[] = [
     description:
       'Afsonaviy M4 o‘zining agressiv vertikal panjarasi, engil uglerod tolali tomi va 510 ot kuchiga ega dvigateli bilan har qanday burilishda trek dinamikasini his qilishga undaydi.',
     colors: [
-      { name: 'Sao Paulo Yellow', hex: '#D2E603' },
-      { name: 'Toronto Red Metallic', hex: '#B8131B' },
-      { name: 'Brooklyn Grey', hex: '#899197' },
-      { name: 'Black Sapphire', hex: '#111213' },
+      { name: 'Sao Paulo Yellow', hex: '#D2E603', image: '/images/cars/m4.jpg' },
+      { name: 'Toronto Red Metallic', hex: '#B8131B', image: '/images/cars/m4-red.jpg' },
+      { name: 'Brooklyn Grey', hex: '#899197', image: '/images/cars/m4-grey.jpg' },
+      { name: 'Black Sapphire', hex: '#111213', image: '/images/cars/m8-black.jpg' },
     ],
     highlights: [
       'M Carbon sport o‘rindiqlari (og‘irlikni kamaytiruvchi)',
@@ -133,7 +133,7 @@ export const CARS_DATA: Car[] = [
     heroImage: '/images/cars/x7.jpg',
     gallery: [
       '/images/cars/x7.jpg',
-      '/images/cars/x5.jpg',
+      '/images/cars/x7-white.jpg',
       '/images/cars/interior.jpg',
     ],
     specs: {
@@ -149,10 +149,10 @@ export const CARS_DATA: Car[] = [
     description:
       'BMW X7 M60i – bu yo‘llar hukmdori. Katta oilaviy qulaylik, uch qatorli kenglik, Sky Lounge panoramali yorug‘lik tomi va kuchli V8 dvigatel uyg‘unligi.',
     colors: [
-      { name: 'Marina Bay Blue', hex: '#0047AB' },
-      { name: 'Ametrin Metallic', hex: '#482D3F' },
-      { name: 'Carbon Black', hex: '#1C1F2B' },
-      { name: 'Mineral White', hex: '#F5F5F5' },
+      { name: 'Marina Bay Blue', hex: '#0047AB', image: '/images/cars/x7.jpg' },
+      { name: 'Mineral White', hex: '#F5F5F5', image: '/images/cars/x7-white.jpg' },
+      { name: 'Carbon Black', hex: '#1C1F2B', image: '/images/cars/m8-black.jpg' },
+      { name: 'Ametrin Metallic', hex: '#482D3F', image: '/images/cars/x7.jpg' },
     ],
     highlights: [
       'Panorama Sky Lounge LED yulduzli shift',
@@ -189,10 +189,10 @@ export const CARS_DATA: Car[] = [
     description:
       'Sportkupening chaqqonligi va elektr quvvatining lahzalik tortishi. BMW i4 M50 sport haydash hissini va kundalik samaradorlikni mukammal darajada birlashtiradi.',
     colors: [
-      { name: 'Frozen Portimao Blue', hex: '#2A52BE' },
-      { name: 'Sanremo Green', hex: '#2E5339' },
-      { name: 'Sunset Orange', hex: '#C34A26' },
-      { name: 'Black Sapphire', hex: '#0B0C0E' },
+      { name: 'Frozen Portimao Blue', hex: '#2A52BE', image: '/images/cars/i4.jpg' },
+      { name: 'Sanremo Green', hex: '#2E5339', image: '/images/cars/m8.jpg' },
+      { name: 'Sunset Orange', hex: '#C34A26', image: '/images/cars/m4-red.jpg' },
+      { name: 'Black Sapphire', hex: '#0B0C0E', image: '/images/cars/i7-black.jpg' },
     ],
     highlights: [
       'Sport Boost rejimida 795 Nm lahzali moment',
@@ -229,10 +229,10 @@ export const CARS_DATA: Car[] = [
     description:
       'BMW X5 M Competition – har qanday yo‘l va ob-havoda superkar dinamikasini taqdim etuvchi kuchli Sports Activity Vehicle. Keng bagaj, yuqori klirens va 625 ot kuchi.',
     colors: [
-      { name: 'Isle of Man Green', hex: '#1B4D3E' },
-      { name: 'Marina Bay Blue', hex: '#1C69D4' },
-      { name: 'Dravit Grey', hex: '#4F5257' },
-      { name: 'Carbon Black', hex: '#14171E' },
+      { name: 'Isle of Man Green', hex: '#1B4D3E', image: '/images/cars/x5.jpg' },
+      { name: 'Marina Bay Blue', hex: '#1C69D4', image: '/images/cars/x7.jpg' },
+      { name: 'Dravit Grey', hex: '#4F5257', image: '/images/cars/760i.jpg' },
+      { name: 'Carbon Black', hex: '#14171E', image: '/images/cars/m8-black.jpg' },
     ],
     highlights: [
       'M Sport egzoz tizimi (sozlanuvchi jarangdor ovoz)',
@@ -269,10 +269,10 @@ export const CARS_DATA: Car[] = [
     description:
       'Yettinchi seriyaning eng yangi avlodi avtomobilsozlik sanoatidagi eng yuqori texnologiyalar va hashamatni o‘zida ifodalaydi. Ilg‘or sun’iy intellekt yordamchilari va VIP salon.',
     colors: [
-      { name: 'Oxide Grey Metallic', hex: '#777A80' },
-      { name: 'Carbon Black Metallic', hex: '#0D1117' },
-      { name: 'Sparkling Copper', hex: '#58433B' },
-      { name: 'Alpine White', hex: '#FAFAFA' },
+      { name: 'Oxide Grey Metallic', hex: '#777A80', image: '/images/cars/760i.jpg' },
+      { name: 'Carbon Black Metallic', hex: '#0D1117', image: '/images/cars/i7-black.jpg' },
+      { name: 'Sparkling Copper', hex: '#58433B', image: '/images/cars/m4-red.jpg' },
+      { name: 'Alpine White', hex: '#FAFAFA', image: '/images/cars/i7.jpg' },
     ],
     highlights: [
       'BMW Interaction Bar kristalli sensorli boshqaruv',
@@ -309,10 +309,10 @@ export const CARS_DATA: Car[] = [
     description:
       'BMW 5 Series yangi avlodi sportivlik va qulaylik o‘rtasidagi eng nozik muvozanatni topgan. Shahar ko‘chalarida chaqqon, uzoq yo‘llarda esa nihoyatda sokin.',
     colors: [
-      { name: 'Cape York Green', hex: '#405B54' },
-      { name: 'Phytonic Blue', hex: '#214D72' },
-      { name: 'Sophisto Grey', hex: '#4C4F56' },
-      { name: 'Alpine White', hex: '#FFFFFF' },
+      { name: 'Sophisto Grey', hex: '#4C4F56', image: '/images/cars/530i.jpg' },
+      { name: 'Cape York Green', hex: '#405B54', image: '/images/cars/m8.jpg' },
+      { name: 'Phytonic Blue', hex: '#214D72', image: '/images/cars/m8-blue.jpg' },
+      { name: 'Alpine White', hex: '#FFFFFF', image: '/images/cars/hero.jpg' },
     ],
     highlights: [
       'Highway Assistant – ko‘z harakati bilan polosani almashtirish',

@@ -37,3 +37,4 @@ describe('BMW Garage & Favorites Logic', () => {
     assert.ok(accel1 < accel2); // M8 is faster 3.2s vs 4.7s
   });
 });
+

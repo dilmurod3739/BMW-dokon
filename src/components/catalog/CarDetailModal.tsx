@@ -45,10 +45,13 @@ export function CarDetailModal({
 
   if (!car) return null;
 
-  const currentImage = car.gallery[selectedImageIndex] || car.heroImage;
   const activeColor =
     car.colors?.[selectedColorIndex] ||
     car.colors?.[0] || { name: 'Alpine White', hex: '#FFFFFF' };
+  const currentImage =
+    selectedImageIndex === 0
+      ? (activeColor.image || car.heroImage)
+      : (car.gallery[selectedImageIndex] || car.heroImage);
   const isInterior = currentImage.toLowerCase().includes('interior');
 
   return (
@@ -83,67 +86,39 @@ export function CarDetailModal({
               boxShadow: `0 15px 40px -10px ${hexToRgba(activeColor.hex, 0.4)}`,
             }}
           >
-            <Image
-              src={currentImage}
-              alt={`${car.name} — ${activeColor.name}`}
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              className="object-cover transition-all duration-500"
-            />
+            <AnimatePresence mode="popLayout">
+              <motion.div
+                key={`modal-img-${car.id}-${currentImage}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.35, ease: 'easeInOut' }}
+                className="absolute inset-0 w-full h-full"
+              >
+                <Image
+                  src={currentImage}
+                  alt={`${car.name} — ${activeColor.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover transition-all duration-500"
+                />
+              </motion.div>
+            </AnimatePresence>
 
             {/* Ambient Ground Underglow / Reflection Halo (Cross-fading) */}
             <AnimatePresence mode="popLayout">
               <motion.div
                 key={`modal-underglow-${car.id}-${activeColor.hex}`}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={{ opacity: 0.6 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.45, ease: 'easeInOut' }}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-28 pointer-events-none blur-2xl"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-20 pointer-events-none blur-2xl"
                 style={{
-                  background: getAmbientUnderglowBackground(activeColor.hex, 0.85),
+                  background: getAmbientUnderglowBackground(activeColor.hex, 0.6),
                 }}
               />
             </AnimatePresence>
-
-            {/* Vehicle Color Tint Overlay (Exterior only, Cross-fading) */}
-            {!isInterior && (
-              <AnimatePresence mode="popLayout">
-                <motion.div
-                  key={`modal-tint-${car.id}-${activeColor.hex}-${selectedImageIndex}`}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: getColorTintOpacity(activeColor.hex) }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.45, ease: 'easeInOut' }}
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    backgroundColor: activeColor.hex,
-                    mixBlendMode: getColorBlendMode(activeColor.hex),
-                  }}
-                />
-              </AnimatePresence>
-            )}
-
-            {/* Specular Sheen / Reflection Overlay */}
-            {!isInterior && (
-              <AnimatePresence mode="popLayout">
-                <motion.div
-                  key={`modal-sheen-${car.id}-${activeColor.hex}-${selectedImageIndex}`}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.45, ease: 'easeInOut' }}
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background: `linear-gradient(135deg, ${hexToRgba(
-                      activeColor.hex,
-                      0.25
-                    )} 0%, transparent 45%, ${hexToRgba(activeColor.hex, 0.18)} 100%)`,
-                    mixBlendMode: 'soft-light',
-                  }}
-                />
-              </AnimatePresence>
-            )}
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 

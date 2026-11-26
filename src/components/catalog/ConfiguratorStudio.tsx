@@ -70,7 +70,9 @@ export function ConfiguratorStudio({
     currentCar.colors?.[0] || { name: 'Alpine White', hex: '#FFFFFF' };
 
   const currentImage =
-    currentCar.gallery[selectedViewIndex] || currentCar.heroImage;
+    selectedViewIndex === 0
+      ? (activeColor.image || currentCar.heroImage)
+      : (currentCar.gallery[selectedViewIndex] || currentCar.heroImage);
   const isInterior = currentImage.toLowerCase().includes('interior');
 
   const handleShareConfig = async () => {
@@ -195,56 +197,25 @@ export function ConfiguratorStudio({
 
               {/* Main Vehicle Image */}
               <div className="relative w-full h-full">
-                <Image
-                  src={currentImage}
-                  alt={`${currentCar.name} — ${activeColor.name}`}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 60vw"
-                  priority
-                  className="object-contain object-center transition-all duration-700"
-                />
-
-                {/* Real-time Vehicle Paint Tint Overlay (Exterior only, Cross-fading) */}
-                {!isInterior && (
-                  <AnimatePresence mode="popLayout">
-                    <motion.div
-                      key={`studio-tint-${currentCar.id}-${activeColor.hex}-${selectedViewIndex}`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: getColorTintOpacity(activeColor.hex) }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5, ease: 'easeInOut' }}
-                      className="absolute inset-0 pointer-events-none"
-                      style={{
-                        backgroundColor: activeColor.hex,
-                        mixBlendMode: getColorBlendMode(activeColor.hex),
-                      }}
+                <AnimatePresence mode="popLayout">
+                  <motion.div
+                    key={`studio-img-${currentCar.id}-${currentImage}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.4, ease: 'easeInOut' }}
+                    className="absolute inset-0 w-full h-full"
+                  >
+                    <Image
+                      src={currentImage}
+                      alt={`${currentCar.name} — ${activeColor.name}`}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 60vw"
+                      priority
+                      className="object-contain object-center transition-all duration-700"
                     />
-                  </AnimatePresence>
-                )}
-
-                {/* Specular Sheen / Metallic Glint Layer */}
-                {!isInterior && (
-                  <AnimatePresence mode="popLayout">
-                    <motion.div
-                      key={`studio-sheen-${currentCar.id}-${activeColor.hex}-${selectedViewIndex}`}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5, ease: 'easeInOut' }}
-                      className="absolute inset-0 pointer-events-none"
-                      style={{
-                        background: `linear-gradient(125deg, ${hexToRgba(
-                          activeColor.hex,
-                          0.3
-                        )} 0%, transparent 40%, ${hexToRgba(
-                          activeColor.hex,
-                          0.22
-                        )} 85%)`,
-                        mixBlendMode: 'soft-light',
-                      }}
-                    />
-                  </AnimatePresence>
-                )}
+                  </motion.div>
+                </AnimatePresence>
               </div>
 
               {/* Top Floating Badge with Selected Color Info */}
