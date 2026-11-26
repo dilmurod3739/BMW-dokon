@@ -50,9 +50,6 @@ export function BrandStory() {
             Harakat San’ati va <br />
             <span className="text-[#1C69D4]">Muhandislik Mukammalligi</span>
           </h2>
-          <p className="mt-5 text-neutral-400 text-sm sm:text-base leading-relaxed">
-            BMW shunchaki transport vositasi emas. Bu 100 yildan ortiq davom etayotgan mukammallikka intilish, haydovchi bilan avtomobil o‘rtasidagi uzviy bog‘liqlik hamda har bir kilometrda rohatlanish falsafasidir.
-          </p>
         </div>
 
         {/* Cinematic Split Feature */}
