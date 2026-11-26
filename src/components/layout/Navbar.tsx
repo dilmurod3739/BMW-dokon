@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { BmwLogo } from '@/components/ui/BmwLogo';
 import { Button } from '@/components/ui/Button';
 import { CarCategory } from '@/types/car';
@@ -39,6 +40,7 @@ export function Navbar({
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,78 +105,100 @@ export function Navbar({
 
             {/* Desktop Navigation Links (styled to mirror bmwusa.com) */}
             <nav className="hidden lg:flex items-center gap-6">
-              {/* Mega-menu trigger for "Modellar" */}
-              <button
-                type="button"
-                onClick={() => setMegaMenuOpen(!megaMenuOpen)}
-                className={`text-sm font-semibold transition-colors cursor-pointer flex items-center gap-1.5 focus:outline-none py-1.5 px-2 rounded-lg ${
-                  megaMenuOpen
-                    ? 'text-[#38bdf8] bg-white/5'
-                    : 'text-neutral-200 hover:text-white'
-                }`}
-                aria-expanded={megaMenuOpen}
-              >
-                <span>Modellar</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    megaMenuOpen ? 'rotate-180 text-[#38bdf8]' : 'text-neutral-400'
+              {/* Mega-menu trigger & Models Page Link */}
+              <div className="relative flex items-center">
+                <Link
+                  href="/models"
+                  className={`text-sm font-semibold transition-colors py-1.5 px-2 rounded-lg ${
+                    pathname === '/models'
+                      ? 'text-white bg-white/10'
+                      : 'text-neutral-200 hover:text-white'
                   }`}
-                />
-              </button>
+                >
+                  Modellar
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMegaMenuOpen(!megaMenuOpen)}
+                  className="p-1 text-neutral-400 hover:text-white cursor-pointer ml-0.5"
+                  aria-expanded={megaMenuOpen}
+                  title="Katalog menyusi"
+                >
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      megaMenuOpen ? 'rotate-180 text-[#38bdf8]' : ''
+                    }`}
+                  />
+                </button>
+              </div>
 
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'interior')}
-                className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              <Link
+                href="/interior"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === '/interior'
+                    ? 'text-[#38bdf8] font-bold'
+                    : 'text-neutral-300 hover:text-[#38bdf8]'
+                }`}
               >
                 Salon va Qulaylik
-              </button>
+              </Link>
 
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'configurator')}
-                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              <Link
+                href="/configurator"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === '/configurator'
+                    ? 'text-[#38bdf8] font-bold'
+                    : 'text-neutral-300 hover:text-white'
+                }`}
               >
                 O‘zingiznikini yarating
-              </button>
+              </Link>
 
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'finance')}
-                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              <Link
+                href="/finance"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === '/finance'
+                    ? 'text-[#38bdf8] font-bold'
+                    : 'text-neutral-300 hover:text-white'
+                }`}
               >
                 Xarid qilish
-              </button>
+              </Link>
 
-              <button
-                type="button"
-                onClick={() => handleNavClick('bmw-i', 'catalog')}
-                className="text-sm font-medium text-neutral-300 hover:text-[#38bdf8] transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              <Link
+                href="/electric"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === '/electric'
+                    ? 'text-[#38bdf8] font-bold'
+                    : 'text-neutral-300 hover:text-[#38bdf8]'
+                }`}
               >
                 Elektr
-              </button>
+              </Link>
 
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'brand-story')}
-                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1 focus:outline-none"
+              <Link
+                href="/about"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === '/about'
+                    ? 'text-[#38bdf8] font-bold'
+                    : 'text-neutral-300 hover:text-white'
+                }`}
               >
                 Biz haqimizda
-              </button>
+              </Link>
             </nav>
           </div>
 
           {/* Right: Dealer / Search / Tools / Test-Drive */}
           <div className="flex items-center gap-2 sm:gap-3">
             {/* Dealer Link */}
-            <button
-              type="button"
-              onClick={() => handleNavClick(undefined, 'dealerships')}
+            <Link
+              href="/about#dealers"
               className="hidden xl:flex items-center gap-1.5 text-xs text-neutral-300 hover:text-white transition-colors py-1.5 px-2.5 rounded-lg hover:bg-white/5 cursor-pointer"
             >
               <MapPin className="w-3.5 h-3.5 text-[#1C69D4]" />
               <span>Mahalliy BMW markazini tanlang</span>
-            </button>
+            </Link>
 
             {/* Solishtirish (Compare) */}
             {onOpenCompare && (
@@ -223,77 +247,53 @@ export function Navbar({
             transition={{ duration: 0.2 }}
             className="fixed inset-x-0 top-[60px] z-40 bg-[#0A0A0C]/98 backdrop-blur-2xl border-b border-white/10 p-6 lg:hidden shadow-2xl"
           >
-            <div className="flex flex-col gap-3">
-              <button
-                type="button"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  setMegaMenuOpen(true);
-                }}
+            <div className="flex flex-col gap-2.5">
+              <Link
+                href="/models"
+                onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-between py-2.5 px-3 rounded-lg text-white bg-white/5 font-semibold text-left"
               >
-                <span>BMW Barcha Modellari (Katalog)</span>
+                <span>Barcha Modellar (Katalog)</span>
                 <ChevronDown className="w-4 h-4 text-[#38bdf8]" />
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick('all', 'catalog')}
-                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
-              >
-                <span>Barcha Modellar</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick('x-series', 'catalog')}
-                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
-              >
-                <span>SUVlar (X Seriyasi)</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick('bmw-i', 'catalog')}
-                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors"
-              >
-                <span>BMW i (To‘liq Elektr)</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick('m-power', 'catalog')}
-                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-red-400 hover:bg-red-500/10 transition-colors"
-              >
-                <span>BMW M High-Performance</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'interior')}
-                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors"
+              </Link>
+              <Link
+                href="/interior"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors font-medium"
               >
                 <Sparkles className="w-4 h-4 text-[#38bdf8]" />
                 <span>BMW Salon va Qulayliklari</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'configurator')}
+              </Link>
+              <Link
+                href="/configurator"
+                onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
                 <Sliders className="w-4 h-4 text-[#1C69D4]" />
                 <span>O‘zingiznikini yarating (Konfigurator)</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'finance')}
+              </Link>
+              <Link
+                href="/finance"
+                onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
                 <span>Kredit va Lizing Kalkulyatori</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleNavClick(undefined, 'dealerships')}
+              </Link>
+              <Link
+                href="/electric"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[#38bdf8] hover:bg-[#0066B1]/10 transition-colors"
+              >
+                <span>BMW i (To‘liq Elektr)</span>
+              </Link>
+              <Link
+                href="/about"
+                onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-neutral-300 hover:text-white hover:bg-white/5 transition-colors"
               >
                 <MapPin className="w-4 h-4 text-[#1C69D4]" />
-                <span>O‘zbekistondagi Rasmiy Dilerlar</span>
-              </button>
+                <span>O‘zbekistondagi Rasmiy Dilerlar & Tarix</span>
+              </Link>
 
               <div className="pt-2 border-t border-white/10 mt-2">
                 <Button
